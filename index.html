@@ -1,0 +1,1206 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#641b28">
+    <meta name="description" content="Luxury Moments at Home imagine des célébrations, des expériences romantiques et des instants élégants à Kribi et partout au Cameroun.">
+    <title>Luxury Moments at Home — L’élégance, chez vous</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+:root {
+  color-scheme: light;
+  --burgundy: #641b28;
+  --burgundy-deep: #43131c;
+  --gold: #c5a15b;
+  --gold-pale: #dfc98d;
+  --ivory: #f7f3eb;
+  --paper: #fffdf8;
+  --ink: #282421;
+  --muted: #716b63;
+  --line: #ded7cb;
+  --serif: "Cormorant Garamond", Georgia, serif;
+  --sans: "Manrope", sans-serif;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 14px; line-height: 1.7; }
+img { display: block; width: 100%; object-fit: cover; }
+a { color: inherit; text-decoration: none; }
+button, input, textarea { font: inherit; }
+button { color: inherit; }
+.skip-link { position: absolute; top: -4rem; left: 1rem; z-index: 20; padding: .7rem 1rem; background: white; color: var(--burgundy); }
+.skip-link:focus { top: 1rem; }
+.announcement { min-height: 34px; padding: 0 5.8vw; display: flex; align-items: center; justify-content: space-between; background: var(--burgundy-deep); color: #fffaf0; font-size: 9px; letter-spacing: .14em; }
+.announcement-note { color: var(--gold-pale); letter-spacing: .04em; }
+.site-header { height: 88px; padding: 0 5.8vw; display: flex; align-items: center; justify-content: space-between; gap: 2rem; background: var(--paper); }
+.brand { display: flex; align-items: center; gap: 12px; min-width: 210px; }
+.brand-mark { width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid var(--gold); border-radius: 50%; color: var(--burgundy); font-family: var(--serif); font-size: 17px; font-weight: 600; }
+.brand-name { display: flex; flex-direction: column; font-family: var(--serif); font-size: 17px; line-height: 1.05; font-weight: 600; }
+.brand-name i { color: var(--burgundy); font-size: 14px; font-weight: 400; }
+.main-nav { display: flex; align-items: center; gap: clamp(1.2rem, 2.5vw, 2.8rem); }
+.main-nav a { color: #3e3934; font-size: 11px; transition: color .2s ease; }
+.main-nav a:hover, .main-nav a:focus-visible { color: var(--burgundy); }
+.header-actions { display: flex; align-items: center; gap: 1rem; }
+.language-toggle { padding: 8px 0; border: 0; background: transparent; color: var(--burgundy); font-size: 10px; font-weight: 700; cursor: pointer; }
+.selection-link { display: flex; align-items: center; gap: 9px; padding: 10px 0 10px 13px; border: 0; border-left: 1px solid var(--line); background: none; color: var(--ink); font-size: 10px; cursor: pointer; }
+.selection-count { width: 20px; height: 20px; display: grid; place-items: center; border-radius: 50%; background: var(--burgundy); color: white; font-size: 10px; }
+.menu-toggle { display: none; }
+
+.hero { position: relative; min-height: min(690px, 72vw); height: 670px; overflow: hidden; display: flex; align-items: center; background: var(--burgundy-deep); color: white; }
+.hero-image, .hero-shade { position: absolute; inset: 0; height: 100%; }
+.hero-image { object-position: center 55%; animation: hero-arrive 1.1s ease-out both; }
+.hero-shade { background: linear-gradient(90deg, rgba(28, 12, 13, .74) 0%, rgba(36, 18, 17, .56) 43%, rgba(38, 21, 18, .14) 100%), linear-gradient(0deg, rgba(27, 15, 14, .3), transparent 35%); }
+.hero-copy { position: relative; z-index: 1; width: min(650px, 66vw); margin-left: 10.5vw; padding: 5rem 0 4rem; animation: copy-arrive .9s .12s ease-out both; }
+.eyebrow { margin: 0 0 1rem; color: var(--burgundy); font-size: 9px; font-weight: 700; letter-spacing: .2em; line-height: 1.5; }
+.light-eyebrow { color: var(--gold-pale); }
+h1, h2, p { margin-top: 0; }
+.hero h1 { margin: 1.2rem 0 1rem; font-family: var(--serif); font-size: clamp(58px, 7vw, 92px); font-weight: 400; line-height: .91; }
+.hero-intro { max-width: 440px; margin-bottom: 2rem; color: rgba(255,255,255,.88); font-size: 13px; line-height: 1.9; }
+.hero-actions { display: flex; align-items: center; gap: 1.7rem; flex-wrap: wrap; }
+.button { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; padding: 0 22px; border: 1px solid transparent; font-size: 10px; font-weight: 700; letter-spacing: .04em; cursor: pointer; transition: background .2s ease, color .2s ease, border-color .2s ease; }
+.button-gold { background: var(--gold); color: #241d13; }
+.button-gold:hover { background: #dfc98d; }
+.button-burgundy { background: var(--burgundy); color: white; }
+.button-burgundy:hover { background: var(--burgundy-deep); }
+.text-link { display: inline-flex; align-items: center; gap: 12px; padding: 5px 0; border-bottom: 1px solid currentColor; font-size: 10px; font-weight: 600; }
+.light-link { color: white; }
+.dark-link { color: var(--burgundy); }
+.text-link span { font-size: 15px; transition: transform .2s ease; }
+.text-link:hover span { transform: translate(3px, -2px); }
+.hero-caption { position: absolute; right: 5.8vw; bottom: 28px; left: 5.8vw; display: flex; justify-content: space-between; color: rgba(255,255,255,.78); font-size: 9px; letter-spacing: .09em; text-transform: uppercase; }
+.proof-strip { min-height: 87px; padding: 1rem 12vw; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; border-bottom: 1px solid var(--line); background: var(--ivory); color: var(--burgundy); }
+.proof-strip p { margin: 0; font-family: var(--serif); font-size: 18px; }
+.proof-rule { width: 1px; height: 26px; background: #cdbf9f; }
+.section-pad { padding: 112px 10.5vw; }
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 3rem; margin-bottom: 42px; }
+h2 { margin-bottom: 0; font-family: var(--serif); font-size: clamp(42px, 5vw, 62px); font-weight: 500; line-height: .98; }
+.section-intro { max-width: 350px; margin: 0 0 4px; color: var(--muted); font-size: 12px; line-height: 1.9; }
+.world-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.world-card { position: relative; min-height: 300px; aspect-ratio: 1 / 1.02; overflow: hidden; background: #ded5c5; color: white; }
+.world-card { width: 100%; padding: 0; border: 0; text-align: left; cursor: pointer; }
+.world-card::after { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(23,17,14,.03) 35%, rgba(23,17,14,.71)); content: ""; }
+.world-card img { height: 100%; transition: transform .7s cubic-bezier(.2,.7,.1,1); }
+.world-card:hover img { transform: scale(1.045); }
+.world-number, .world-label, .world-arrow { position: absolute; z-index: 1; }
+.world-number { top: 20px; left: 20px; color: rgba(255,255,255,.87); font-size: 9px; letter-spacing: .12em; }
+.world-label { right: 50px; bottom: 20px; left: 20px; display: flex; flex-direction: column; }
+.world-label small { color: var(--gold-pale); font-size: 9px; letter-spacing: .13em; }
+.world-label strong { font-family: var(--serif); font-size: 31px; font-weight: 500; line-height: 1.15; }
+.world-arrow { right: 20px; bottom: 26px; font-size: 18px; }
+
+.rental-feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); background: var(--ivory); }
+.rental-image-wrap { position: relative; min-height: 620px; }
+.rental-image-wrap img { height: 100%; min-height: 620px; }
+.image-note { position: absolute; bottom: 20px; left: 20px; padding: 9px 13px; background: var(--paper); color: var(--burgundy); font-size: 9px; }
+.rental-copy { align-self: center; padding: 5rem clamp(2.5rem, 7vw, 7.3rem); }
+.rental-copy h2 { margin: 1rem 0 1.3rem; }
+.rental-copy > p:not(.eyebrow) { max-width: 470px; margin-bottom: 2rem; color: var(--muted); font-size: 12px; line-height: 1.95; }
+.rental-product { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 18px 0; margin-bottom: 21px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.rental-product > div { display: flex; flex-direction: column; gap: 3px; }
+.product-category { color: var(--muted); font-size: 8px; letter-spacing: .14em; }
+.rental-product strong { font-family: var(--serif); font-size: 20px; font-weight: 600; }
+.rental-product > div > span:last-child { color: var(--muted); font-size: 9px; }
+.add-selection { display: flex; align-items: center; gap: 8px; padding: 9px 0 9px 10px; border: 0; background: transparent; color: var(--burgundy); font-size: 9px; font-weight: 700; text-align: left; cursor: pointer; }
+.add-selection > span:first-child { width: 24px; height: 24px; display: grid; place-items: center; border: 1px solid var(--gold); border-radius: 50%; font-size: 16px; }
+.add-selection:hover > span:first-child { background: var(--gold); }
+.catalogue { scroll-margin-top: 25px; background: var(--paper); }
+.catalogue-heading { margin-bottom: 24px; }
+.catalogue-demo-note { margin: 0 0 20px; color: var(--muted); font-size: 8px; font-weight: 700; letter-spacing: .15em; }
+.catalogue-categories { display: flex; flex-wrap: wrap; gap: 8px; padding: 2px 2px 13px; }
+.catalogue-category { flex: 0 0 auto; min-height: 39px; padding: 0 15px; border: 1px solid var(--line); background: transparent; color: var(--ink); font-size: 9px; cursor: pointer; }
+.catalogue-category[aria-pressed="true"] { border-color: var(--burgundy); background: var(--burgundy); color: white; }
+.catalogue-filters { display: flex; align-items: end; gap: 12px; padding: 18px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.catalogue-filters label { min-width: 140px; display: grid; gap: 5px; color: var(--muted); font-size: 9px; }
+.catalogue-filters select, .selection-project-fields input { min-height: 38px; padding: 0 10px; border: 1px solid var(--line); border-radius: 0; background: var(--paper); color: var(--ink); font-size: 10px; }
+.filter-reset { min-height: 38px; margin-left: auto; padding: 0 10px; border: 0; background: transparent; color: var(--burgundy); font-size: 9px; font-weight: 700; cursor: pointer; }
+.catalogue-results { display: flex; align-items: center; justify-content: space-between; padding: 17px 0 12px; }
+.catalogue-count { color: var(--muted); font-size: 9px; }
+.catalogue-selection { display: flex; align-items: center; gap: 8px; padding: 5px 0 5px 10px; border: 0; border-left: 1px solid var(--line); background: transparent; color: var(--burgundy); font-size: 9px; font-weight: 700; cursor: pointer; }
+.catalogue-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px 13px; }
+.catalogue-card { min-width: 0; }
+.catalogue-photo { position: relative; overflow: hidden; background: var(--ivory); }
+.catalogue-photo img { width: 100%; aspect-ratio: .88 / 1; transition: transform .5s ease; }
+.catalogue-card:hover .catalogue-photo img { transform: scale(1.035); }
+.catalogue-photo-label { position: absolute; bottom: 10px; left: 10px; padding: 6px 8px; background: var(--paper); color: var(--burgundy); font-size: 8px; }
+.catalogue-card-category { display: block; margin: 11px 0 3px; color: var(--muted); font-size: 8px; letter-spacing: .12em; text-transform: uppercase; }
+.catalogue-card h3 { margin: 0 0 5px; font-family: var(--serif); font-size: 22px; font-weight: 600; line-height: 1.1; }
+.catalogue-specs { min-height: 49px; margin: 0 0 10px; color: var(--muted); font-size: 9px; line-height: 1.7; }
+.catalogue-price-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding-top: 10px; border-top: 1px solid var(--line); }
+.catalogue-price { color: var(--burgundy); font-size: 9px; font-weight: 700; }
+.catalogue-add { display: inline-flex; align-items: center; gap: 6px; padding: 5px 0 5px 6px; border: 0; background: transparent; color: var(--burgundy); font-size: 8px; font-weight: 700; cursor: pointer; }
+.catalogue-add span:first-child { width: 21px; height: 21px; display: grid; place-items: center; border: 1px solid var(--gold); border-radius: 50%; font-size: 14px; }
+.catalogue-empty { padding: 35px 0; color: var(--muted); text-align: center; font-size: 12px; }
+.occasions { padding-top: 76px; padding-bottom: 78px; background: var(--ivory); }
+.occasion-list { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-top: 1px solid #d9cebb; border-bottom: 1px solid #d9cebb; }
+.occasion-list button { min-height: 115px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; padding: 16px; border: 0; border-right: 1px solid #d9cebb; background: transparent; color: var(--ink); text-align: left; cursor: pointer; }
+.occasion-list button:last-child { border-right: 0; }
+.occasion-list button > span { color: var(--muted); font-size: 8px; }
+.occasion-list strong { font-family: var(--serif); font-size: 20px; font-weight: 600; line-height: 1.1; }
+.occasion-list i { align-self: flex-end; color: var(--burgundy); font-size: 16px; font-style: normal; }
+.occasion-list button:hover { background: rgba(255,255,255,.52); }
+.realisations { background: var(--ivory); }
+.realisation-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 13px; }
+.realisation-card { position: relative; min-height: 260px; aspect-ratio: 1.06 / 1; overflow: hidden; background: var(--burgundy-deep); color: white; }
+.realisation-card img { height: 100%; transition: transform .6s ease; }
+.realisation-card:hover img { transform: scale(1.04); }
+.realisation-card::after { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(30,15,14,.78), transparent 60%); content: ""; }
+.realisation-card > div { position: absolute; z-index: 1; right: 16px; bottom: 15px; left: 16px; }
+.realisation-card > div > span { color: var(--gold-pale); font-size: 8px; letter-spacing: .12em; }
+.realisation-card h3 { margin: 3px 0 0; font-family: var(--serif); font-size: 23px; font-weight: 500; line-height: 1.1; }
+.realisation-large { grid-column: span 2; grid-row: span 2; aspect-ratio: auto; min-height: 540px; }
+.realisation-large h3 { font-size: 31px; }
+.method { background: var(--burgundy-deep); color: white; }
+.method .section-intro { color: #e0d6c8; }
+.method-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); padding: 0; margin: 48px 0 0; list-style: none; }
+.method-steps li { position: relative; padding: 0 23px 0 0; margin-right: 20px; border-top: 1px solid rgba(223,201,141,.55); }
+.method-steps li::before { position: absolute; top: -5px; left: 0; width: 9px; height: 9px; border-radius: 50%; background: var(--gold-pale); content: ""; }
+.method-steps li > span { display: block; margin: 19px 0 7px; color: var(--gold-pale); font-size: 9px; letter-spacing: .14em; }
+.method-steps h3 { margin: 0 0 7px; font-family: var(--serif); font-size: 27px; font-weight: 500; }
+.method-steps p { max-width: 220px; margin: 0; color: #e0d6c8; font-size: 10px; line-height: 1.8; }
+.diane-signature { display: flex; flex-direction: column; gap: 1px; color: var(--burgundy); font-family: var(--serif); font-size: 28px; font-style: italic; }
+.diane-signature span { color: var(--muted); font-family: var(--sans); font-size: 9px; font-style: normal; }
+.editorial-note { margin: -13px 0 12px; color: var(--muted); font-size: 8px; font-style: italic; }
+
+.house { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1fr); align-items: center; gap: 9vw; }
+.house-image { position: relative; min-height: 560px; }
+.house-image img { height: 560px; }
+.house-seal { position: absolute; right: -37px; bottom: 30px; width: 100px; height: 100px; display: grid; place-content: center; border: 1px solid var(--gold-pale); border-radius: 50%; background: var(--burgundy); color: white; font-family: var(--serif); font-size: 22px; line-height: .85; text-align: center; }
+.house-seal i { margin-top: 5px; color: var(--gold-pale); font-size: 13px; }
+.house-copy h2 { margin: 1rem 0 1.4rem; }
+.house-copy > p:not(.eyebrow) { max-width: 460px; margin-bottom: 1.5rem; color: var(--muted); font-size: 12px; line-height: 2; }
+.house-copy blockquote { max-width: 390px; margin: 0 0 2rem; color: var(--burgundy); font-family: var(--serif); font-size: 23px; font-style: italic; line-height: 1.25; }
+.quote-band { position: relative; overflow: hidden; padding: 94px 15vw 90px; background: var(--burgundy); color: white; text-align: center; }
+.quote-band blockquote { max-width: 800px; margin: 1.1rem auto 1.5rem; font-family: var(--serif); font-size: clamp(33px, 4vw, 51px); line-height: 1.1; }
+.testimonial-quote { min-height: 2.2em; }
+.testimonial-controls { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 22px; }
+.testimonial-position { color: var(--gold-pale); font-size: 9px; letter-spacing: .12em; }
+.testimonial-controls .world-step { border-color: rgba(223,201,141,.55); color: var(--gold-pale); }
+.quote-credit { margin: 0; color: var(--gold-pale); font-size: 8px; letter-spacing: .17em; }
+.quote-ornament { position: absolute; top: 11px; right: 8vw; color: rgba(223,201,141,.22); font-size: 140px; }
+.contact { display: flex; align-items: end; justify-content: space-between; gap: 4rem; background: var(--ivory); }
+.contact h2 { font-size: clamp(44px, 5.2vw, 66px); }
+.contact-action { max-width: 390px; }
+.contact-action p { color: var(--muted); font-size: 12px; line-height: 1.9; }
+.contact-action .button { margin: 5px 0 15px; }
+.contact-action > span { display: block; color: var(--muted); font-size: 9px; }
+.site-footer { min-height: 104px; padding: 1.5rem 5.8vw; display: flex; align-items: center; justify-content: space-between; gap: 2rem; background: #221d1a; color: #f6f0e5; }
+.footer-brand .brand-mark { border-color: var(--gold); color: var(--gold-pale); }
+.footer-brand .brand-name i { color: var(--gold-pale); }
+.site-footer > p { margin: 0; color: var(--gold-pale); font-family: var(--serif); font-size: 16px; font-style: italic; }
+.site-footer > span { color: #d0c7b9; font-size: 9px; }
+.floating-contact { position: fixed; z-index: 5; right: 22px; bottom: 20px; min-height: 46px; display: flex; align-items: center; gap: 10px; padding: 0 17px; border: 0; border-radius: 24px; background: var(--burgundy); box-shadow: 0 6px 24px rgba(41,17,18,.22); color: white; font-size: 10px; cursor: pointer; }
+.contact-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--gold-pale); }
+
+dialog { width: min(520px, calc(100% - 30px)); max-height: min(90vh, 760px); padding: 44px; border: 0; background: var(--paper); color: var(--ink); box-shadow: 0 20px 80px rgba(20,13,12,.25); }
+dialog::backdrop { background: rgba(30,18,16,.58); backdrop-filter: blur(2px); }
+dialog h2 { margin: .2rem 0 1rem; font-size: 46px; }
+.world-dialog { width: min(940px, calc(100% - 30px)); padding: 48px; }
+.world-dialog-heading { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin: 0 0 27px; }
+.world-dialog-heading h2 { margin: .2rem 0 0; }
+.world-dialog-description { max-width: 390px; margin: 0 0 3px; color: var(--muted); font-size: 11px; line-height: 1.8; }
+.preview-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.preview-card { min-width: 0; }
+.preview-card img { height: 190px; background: var(--ivory); }
+.preview-card h3 { margin: 10px 0 2px; color: var(--ink); font-family: var(--serif); font-size: 20px; font-weight: 600; line-height: 1.2; }
+.preview-card p { margin: 0; color: var(--muted); font-size: 9px; }
+.world-dialog-footer { position: sticky; bottom: -20px; z-index: 2; display: flex; align-items: center; gap: 12px; margin: 26px -4px -20px; padding: 18px 4px 20px; border-top: 1px solid var(--line); background: var(--paper); }
+.world-step { width: 34px; height: 34px; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--burgundy); font-size: 17px; cursor: pointer; }
+.world-position { margin-right: auto; color: var(--muted); font-size: 9px; letter-spacing: .1em; }
+.world-rental-link { margin-right: 8px; }
+.dialog-close { position: absolute; top: 13px; right: 15px; width: 35px; height: 35px; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--burgundy); font-size: 23px; cursor: pointer; }
+.selection-empty, .quote-description { color: var(--muted); font-size: 11px; line-height: 1.8; }
+.selection-items { padding: 0; list-style: none; }
+.selection-items li { padding: 12px 0; border-top: 1px solid var(--line); font-family: var(--serif); font-size: 20px; }
+.selection-items li { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 10px; }
+.selection-item-category { display: block; color: var(--muted); font-family: var(--sans); font-size: 8px; letter-spacing: .1em; text-transform: uppercase; }
+.quantity-control { display: flex; align-items: center; gap: 8px; font-family: var(--sans); font-size: 11px; }
+.quantity-control button { width: 28px; height: 28px; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--burgundy); cursor: pointer; }
+.selection-remove { grid-column: 1 / -1; justify-self: end; padding: 3px 0; border: 0; background: transparent; color: var(--muted); font-size: 8px; text-decoration: underline; cursor: pointer; }
+.selection-project-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 20px; }
+.selection-project-fields label { display: grid; gap: 5px; color: var(--muted); font-size: 9px; }
+.selection-project-fields input { width: 100%; }
+.selection-quote { margin-top: 15px; }
+.quote-form { display: grid; gap: 14px; }
+.quote-form label { display: grid; gap: 6px; color: var(--burgundy); font-size: 10px; font-weight: 700; }
+.quote-form input:not([type="checkbox"]):not([type="file"]), .quote-form textarea, .quote-form select { width: 100%; min-height: 41px; padding: 10px; border: 1px solid #cfc7bb; border-radius: 0; background: white; color: var(--ink); font-size: 11px; }
+.quote-form input[type="file"] { width: 100%; padding: 9px; border: 1px dashed #b9ac97; background: var(--ivory); color: var(--muted); font-size: 10px; }
+.quote-form textarea { resize: vertical; }
+.quote-form .button { justify-self: end; }
+.quote-step-panel { display: grid; gap: 13px; }
+.quote-field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; }
+.quote-progress { height: 3px; margin: 19px 0 8px; background: var(--line); }
+.quote-progress-fill { display: block; width: 33.333%; height: 100%; background: var(--gold); transition: width .25s ease; }
+.quote-step-label { margin-bottom: 16px; color: var(--muted); font-size: 9px; }
+.quote-form-actions { position: sticky; bottom: -20px; z-index: 2; display: flex; justify-content: space-between; gap: 10px; margin: 7px -4px -20px; padding: 12px 4px 20px; background: var(--paper); }
+.quote-back { padding: 0 12px; border: 1px solid var(--line); background: transparent; color: var(--burgundy); font-size: 10px; cursor: pointer; }
+.service-options { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 13px; border: 1px solid var(--line); }
+.service-options legend { padding: 0 5px; color: var(--burgundy); font-size: 10px; font-weight: 700; }
+.service-options label, .checkbox-line { display: flex !important; grid-template-columns: auto 1fr; align-items: center; gap: 8px !important; color: var(--ink) !important; font-size: 9px !important; font-weight: 500 !important; }
+.service-options input, .checkbox-line input { accent-color: var(--burgundy); }
+.consent-line { align-items: flex-start !important; }
+.quote-selection-summary { padding: 10px; border-left: 2px solid var(--gold); background: var(--ivory); color: var(--muted); white-space: pre-line; font-size: 9px; }
+.quote-selection-summary:not([hidden]) { display: block; }
+.whatsapp-preview { width: 100%; margin: 8px 0 14px; padding: 13px; border: 1px solid var(--line); background: #f5f2e9; color: var(--ink); font: 11px/1.7 var(--sans); resize: vertical; }
+.whatsapp-status { min-height: 20px; margin: 9px 0 0; color: var(--burgundy); font-size: 10px; }
+.selection-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 9px; margin-top: 15px; }
+.selection-actions .selection-quote { margin-top: 0; }
+.selection-whatsapp { padding: 9px 0; border: 0; background: transparent; color: var(--burgundy); font-size: 9px; font-weight: 700; text-decoration: underline; cursor: pointer; }
+.form-status { min-height: 20px; margin: 0; color: var(--burgundy); font-size: 11px; }
+.cookie-note { position: fixed; z-index: 10; right: 20px; bottom: 78px; width: min(390px, calc(100% - 40px)); padding: 18px; border: 1px solid var(--line); background: var(--paper); box-shadow: 0 8px 30px rgba(34,29,26,.15); }
+.cookie-note[hidden] { display: none; }
+.cookie-note p { margin-bottom: 12px; color: var(--muted); font-size: 10px; }
+.cookie-note > div { display: flex; justify-content: end; gap: 9px; }
+.cookie-note button { min-width: 82px; padding: 8px 12px; border: 1px solid var(--burgundy); background: transparent; color: var(--burgundy); font-size: 9px; font-weight: 700; cursor: pointer; }
+.cookie-note button:last-child { background: var(--burgundy); color: white; }
+:focus-visible { outline: 2px solid #a16b00; outline-offset: 3px; }
+
+@keyframes hero-arrive { from { transform: scale(1.035); opacity: .65; } to { transform: scale(1); opacity: 1; } }
+@keyframes copy-arrive { from { transform: translateY(14px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
+
+@media (max-width: 980px) {
+  .site-header { gap: 1rem; padding: 0 4vw; }
+  .brand { min-width: unset; }
+  .main-nav { gap: .7rem; }
+  .main-nav a { font-size: 10px; }
+  .header-actions { gap: .7rem; }
+  .section-pad { padding: 88px 7vw; }
+  .rental-copy { padding: 4rem 4.5vw; }
+  .rental-image-wrap, .rental-image-wrap img { min-height: 540px; }
+  .house { gap: 7vw; }
+  .house-image, .house-image img { min-height: 490px; height: 490px; }
+}
+@media (max-width: 720px) {
+  .announcement { min-height: 31px; padding: 0 5vw; font-size: 8px; }
+  .announcement-note { display: none; }
+  .site-header { position: relative; height: 74px; padding: 0 5vw; }
+  .brand-mark { width: 39px; height: 39px; font-size: 15px; }
+  .brand-name { font-size: 15px; }
+  .brand-name i { font-size: 12px; }
+  .menu-toggle { width: 36px; height: 36px; order: 3; display: grid; align-content: center; gap: 5px; padding: 7px; border: 0; background: transparent; cursor: pointer; }
+  .menu-toggle span { height: 1px; background: var(--burgundy); }
+  .main-nav { position: absolute; z-index: 5; top: 74px; right: 0; left: 0; display: none; padding: 12px 5vw 22px; border-top: 1px solid var(--line); background: var(--paper); box-shadow: 0 12px 18px rgba(20,13,12,.08); }
+  .main-nav.is-open { display: grid; gap: 0; }
+  .main-nav a { padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 12px; }
+  .header-actions { margin-left: auto; }
+  .selection-link { padding-left: 9px; font-size: 0; }
+  .selection-count { font-size: 10px; }
+  .hero { min-height: 620px; height: 76vh; max-height: 760px; align-items: end; }
+  .hero-image { object-position: 58% center; }
+  .hero-shade { background: linear-gradient(0deg, rgba(27,12,14,.85), rgba(32,17,17,.48) 58%, rgba(32,17,17,.08)); }
+  .hero-copy { width: auto; margin: 0; padding: 6rem 7vw 6rem; }
+  .hero h1 { font-size: clamp(58px, 13vw, 78px); }
+  .hero-intro { max-width: 360px; font-size: 12px; }
+  .hero-actions { align-items: flex-start; gap: 1rem; flex-direction: column; }
+  .hero-caption { right: 7vw; left: 7vw; bottom: 18px; font-size: 8px; }
+  .proof-strip { min-height: unset; padding: 18px 7vw; gap: 10px; }
+  .proof-strip p { max-width: 30%; font-size: 14px; line-height: 1.15; text-align: center; }
+  .proof-rule { flex: 0 0 1px; height: 28px; }
+  .section-pad { padding: 72px 7vw; }
+  .section-heading { display: block; margin-bottom: 27px; }
+  h2 { font-size: 47px; }
+  .section-intro { margin-top: 16px; }
+  .world-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+  .world-card { min-height: 0; aspect-ratio: .8 / 1; }
+  .world-number { top: 12px; left: 12px; }
+  .world-label { right: 35px; bottom: 14px; left: 12px; }
+  .world-label strong { font-size: 24px; }
+  .world-arrow { right: 11px; bottom: 17px; font-size: 14px; }
+  .rental-feature { grid-template-columns: 1fr; }
+  .rental-image-wrap, .rental-image-wrap img { min-height: 380px; height: 380px; }
+  .rental-copy { padding: 56px 7vw 65px; }
+  .rental-copy h2 { font-size: 52px; }
+  .rental-product { align-items: flex-start; flex-direction: column; }
+  .add-selection { padding-left: 0; }
+  .catalogue { padding-top: 65px; }
+  .catalogue-filters { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .catalogue-filters label { min-width: 0; }
+  .filter-reset { justify-self: start; margin-left: 0; }
+  .catalogue-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 10px; }
+  .catalogue-card h3 { font-size: 19px; }
+  .catalogue-specs { min-height: 56px; font-size: 8px; }
+  .catalogue-price-row { align-items: flex-start; flex-direction: column; }
+  .selection-project-fields { grid-template-columns: 1fr; }
+  .occasion-list { grid-template-columns: 1fr 1fr; }
+  .occasion-list button { min-height: 94px; border-bottom: 1px solid #d9cebb; }
+  .occasion-list button:nth-child(2n) { border-right: 0; }
+  .occasion-list button:last-child { border-bottom: 0; }
+  .occasion-list strong { font-size: 18px; }
+  .realisation-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+  .realisation-card { min-width: 0; min-height: 0; aspect-ratio: 1 / 1; }
+  .realisation-large { min-height: 0; aspect-ratio: 1.15 / 1; }
+  .realisation-card h3 { font-size: 19px; }
+  .realisation-large h3 { font-size: 25px; }
+  .method-steps { grid-template-columns: 1fr 1fr; gap: 30px 12px; }
+  .method-steps li { margin-right: 0; padding-right: 8px; }
+  .method-steps h3 { font-size: 24px; }
+  .quote-field-row { grid-template-columns: 1fr; }
+  .service-options { grid-template-columns: 1fr 1fr; }
+  .house { grid-template-columns: 1fr; gap: 47px; }
+  .house-image, .house-image img { min-height: 380px; height: 380px; }
+  .house-seal { right: 13px; bottom: -26px; width: 85px; height: 85px; font-size: 19px; }
+  .house-copy h2 { font-size: 48px; }
+  .quote-band { padding: 70px 8vw; }
+  .quote-band blockquote { font-size: 36px; }
+  .quote-ornament { right: 1vw; font-size: 100px; }
+  .contact { display: grid; gap: 26px; }
+  .contact h2 { font-size: 49px; }
+  .site-footer { align-items: flex-start; flex-direction: column; gap: 14px; padding: 27px 7vw; }
+  .site-footer > p { margin: 0; }
+  .floating-contact { right: 12px; bottom: 12px; min-height: 42px; padding: 0 14px; }
+  dialog { padding: 40px 23px 27px; }
+  dialog h2 { font-size: 40px; }
+  .world-dialog { padding: 42px 20px 22px; }
+  .world-dialog-heading { display: block; margin-bottom: 18px; }
+  .world-dialog-heading h2 { font-size: 39px; }
+  .world-dialog-description { margin-top: 10px; }
+  .preview-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px 9px; }
+  .preview-card:last-child { display: none; }
+  .preview-card img { height: 135px; }
+  .preview-card h3 { font-size: 17px; }
+  .world-dialog-footer { flex-wrap: wrap; gap: 9px; }
+  .world-dialog-footer .world-quote-link { order: 2; width: 100%; }
+  .world-rental-link { order: 1; margin: 0 0 0 auto; }
+  .world-position { margin-right: 0; }
+}
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu" data-fr="Aller au contenu" data-en="Skip to content">Aller au contenu</a>
+    <div class="announcement">
+      <span data-fr="KRIBI · DOUALA · PARTOUT AU CAMEROUN" data-en="KRIBI · DOUALA · ACROSS CAMEROON">KRIBI · DOUALA · PARTOUT AU CAMEROUN</span>
+      <span class="announcement-note" data-fr="L’élégance est notre signature." data-en="Elegance is our signature.">L’élégance est notre signature.</span>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#accueil" aria-label="Luxury Moments at Home, accueil">
+        <span class="brand-mark">LMH</span>
+        <span class="brand-name">Luxury Moments <i>at Home</i></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+        <span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <a href="#univers" data-fr="Nos univers" data-en="Our worlds">Nos univers</a>
+        <a href="#location" data-fr="Location" data-en="Rentals">Location</a>
+        <a href="#realisations" data-fr="Réalisations" data-en="Stories">Réalisations</a>
+        <a href="#methode" data-fr="Notre méthode" data-en="Our approach">Notre méthode</a>
+        <a href="#maison" data-fr="La maison LMH" data-en="The LMH house">La maison LMH</a>
+        <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="language-toggle" type="button" aria-label="Switch to English">EN</button>
+        <button class="selection-link" type="button" data-open-selection>
+          <span data-fr="Ma sélection" data-en="My selection">Ma sélection</span>
+          <span class="selection-count" aria-label="0 article sélectionné">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <section class="hero" id="accueil" aria-labelledby="hero-title">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2200&q=85" alt="Table élégamment dressée pour une réception en plein air" fetchpriority="high">
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <p class="eyebrow light-eyebrow" data-fr="LMH BY DIANE · KRIBI, CAMEROUN" data-en="LMH BY DIANE · KRIBI, CAMEROON">LMH BY DIANE · KRIBI, CAMEROUN</p>
+          <h1 id="hero-title" data-fr="Les beaux moments<br>ont leur maison." data-en="Beautiful moments<br>have a home.">Les beaux moments<br>ont leur maison.</h1>
+          <p class="hero-intro" data-fr="Célébrations pensées avec soin, pièces d’exception et attentions délicates. Pour les instants qui méritent d’être inoubliables." data-en="Thoughtful celebrations, exceptional pieces and tender details. For moments that deserve to be unforgettable.">Célébrations pensées avec soin, pièces d’exception et attentions délicates. Pour les instants qui méritent d’être inoubliables.</p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="#contact" data-fr="Imaginer mon événement" data-en="Plan my occasion">Imaginer mon événement</a>
+            <a class="text-link light-link" href="#univers" data-fr="Explorer nos univers" data-en="Explore our worlds">Explorer nos univers <span aria-hidden="true">↘</span></a>
+          </div>
+        </div>
+        <div class="hero-caption"><span>01 / 06</span><span data-fr="Chaque détail raconte une histoire" data-en="Every detail tells a story">Chaque détail raconte une histoire</span></div>
+      </section>
+
+      <div class="proof-strip" aria-label="Nos engagements">
+        <p data-fr="Une maison, six façons de célébrer" data-en="One house, six ways to celebrate">Une maison, six façons de célébrer</p>
+        <span class="proof-rule"></span>
+        <p data-fr="À Kribi et au-delà" data-en="In Kribi and beyond">À Kribi et au-delà</p>
+        <span class="proof-rule"></span>
+        <p data-fr="Imaginé avec intention" data-en="Made with intention">Imaginé avec intention</p>
+      </div>
+
+      <section class="worlds section-pad" id="univers">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-fr="L’ART DE RECEVOIR, AUTREMENT" data-en="THE ART OF HOSTING, REIMAGINED">L’ART DE RECEVOIR, AUTREMENT</p>
+            <h2 data-fr="Un monde à votre image." data-en="A world of your own.">Un monde à votre image.</h2>
+          </div>
+          <p class="section-intro" data-fr="De la première idée au dernier détail, découvrez les univers qui composent l’expérience LMH." data-en="From the first idea to the final detail, discover the worlds that shape the LMH experience.">De la première idée au dernier détail, découvrez les univers qui composent l’expérience LMH.</p>
+        </div>
+        <div class="world-grid">
+          <button class="world-card world-celebrations" type="button" data-world="celebrations" aria-haspopup="dialog">
+            <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1000&q=80" alt="Décoration de table florale pour une célébration" loading="lazy">
+            <span class="world-number">01</span><span class="world-label"><small>Luxury</small><strong data-fr="Célébrations" data-en="Celebrations">Célébrations</strong></span><span class="world-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="world-card world-rentals" type="button" data-world="rentals" aria-haspopup="dialog">
+            <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1000&q=80" alt="Mobilier raffiné prêt à accueillir vos invités" loading="lazy">
+            <span class="world-number">02</span><span class="world-label"><small>Luxury</small><strong data-fr="Location" data-en="Rentals">Location</strong></span><span class="world-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="world-card world-romance" type="button" data-world="romance" aria-haspopup="dialog">
+            <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=1000&q=80" alt="Roses rouges pour une attention romantique" loading="lazy">
+            <span class="world-number">03</span><span class="world-label"><small>Luxury</small><strong data-fr="Romance" data-en="Romance">Romance</strong></span><span class="world-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="world-card world-gifts" type="button" data-world="gifts" aria-haspopup="dialog">
+            <img src="https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=1000&q=80" alt="Cadeau soigneusement emballé avec un ruban" loading="lazy">
+            <span class="world-number">04</span><span class="world-label"><small>Luxury</small><strong data-fr="Cadeaux" data-en="Gifts">Cadeaux</strong></span><span class="world-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="world-card world-fashion" type="button" data-world="fashion" aria-haspopup="dialog">
+            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=80" alt="Silhouette en tenue de soirée élégante" loading="lazy">
+            <span class="world-number">05</span><span class="world-label"><small>LMH</small><strong>Fashion House</strong></span><span class="world-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="world-card world-academy" type="button" data-world="academy" aria-haspopup="dialog">
+            <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=1000&q=80" alt="Atelier et moment de partage autour d’une table" loading="lazy">
+            <span class="world-number">06</span><span class="world-label"><small>Academy of</small><strong>Elegance</strong></span><span class="world-arrow" aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="occasions section-pad" id="occasions">
+        <div class="section-heading">
+          <div><p class="eyebrow" data-fr="POUR LES MOMENTS QUI COMPTENT" data-en="FOR THE MOMENTS THAT MATTER">POUR LES MOMENTS QUI COMPTENT</p><h3 data-fr="Quelle belle occasion ?" data-en="What are we celebrating?">Quelle belle occasion ?</h2></div>
+          <p class="section-intro" data-fr="Un anniversaire, une réunion de famille ou une surprise à deux : chaque occasion trouve son univers chez LMH." data-en="A birthday, a family gathering or a surprise for two: every occasion finds its place at LMH.">Un anniversaire, une réunion de famille ou une surprise à deux : chaque occasion trouve son univers chez LMH.</p>
+        </div>
+        <div class="occasion-list">
+          <button type="button" data-occasion="Anniversaire" data-en-occasion="Birthday"><span>01</span><strong data-fr="Anniversaire" data-en="Birthday">Anniversaire</strong><i aria-hidden="true">↗</i></button>
+          <button type="button" data-occasion="Anniversaire de mariage" data-en-occasion="Wedding anniversary"><span>02</span><strong data-fr="Anniversaire de mariage" data-en="Wedding anniversary">Anniversaire de mariage</strong><i aria-hidden="true">↗</i></button>
+          <button type="button" data-occasion="Réunion de famille" data-en-occasion="Family gathering"><span>03</span><strong data-fr="Réunion de famille" data-en="Family gathering">Réunion de famille</strong><i aria-hidden="true">↗</i></button>
+          <button type="button" data-occasion="Événement à domicile" data-en-occasion="At-home event"><span>04</span><strong data-fr="Événement à domicile" data-en="At-home event">Événement à domicile</strong><i aria-hidden="true">↗</i></button>
+          <button type="button" data-occasion="Occasion spéciale" data-en-occasion="Special occasion"><span>05</span><strong data-fr="Occasion spéciale" data-en="Special occasion">Occasion spéciale</strong><i aria-hidden="true">↗</i></button>
+        </div>
+      </section>
+
+      <section class="rental-feature" id="location">
+        <div class="rental-image-wrap">
+          <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1400&q=85" alt="Salon événementiel aménagé avec des fauteuils et des fleurs" loading="lazy">
+          <span class="image-note" data-fr="Collection · pièces choisies avec soin" data-en="Collection · carefully chosen pieces">Collection · pièces choisies avec soin</span>
+        </div>
+        <div class="rental-copy">
+          <p class="eyebrow" data-fr="LUXURY RENTALS" data-en="LUXURY RENTALS">LUXURY RENTALS</p>
+          <h2 data-fr="La pièce juste.<br>Le moment parfait." data-en="The right piece.<br>The perfect moment.">La pièce juste.<br>Le moment parfait.</h2>
+          <p data-fr="Des assises aux arts de la table, composez une ambiance singulière avec notre sélection de pièces à louer. Ajoutez vos favoris, puis transmettez-nous votre projet : nous confirmerons ensemble les disponibilités." data-en="From seating to tableware, create a distinctive atmosphere with our curated rental pieces. Save your favourites, then share your plans with us and we’ll confirm availability together.">Des assises aux arts de la table, composez une ambiance singulière avec notre sélection de pièces à louer. Ajoutez vos favoris, puis transmettez-nous votre projet : nous confirmerons ensemble les disponibilités.</p>
+          <div class="rental-product">
+            <div><span class="product-category" data-fr="PIÈCE À DÉCOUVRIR" data-en="FEATURED PIECE">PIÈCE À DÉCOUVRIR</span><strong data-fr="Le fauteuil Signature" data-en="The Signature chair">Le fauteuil Signature</strong><span data-fr="Velours profond · finition dorée" data-en="Rich velvet · gold finish">Velours profond · finition dorée</span></div>
+            <button class="add-selection" type="button" data-add-item="Le fauteuil Signature" data-en-item="The Signature chair" aria-label="Ajouter Le fauteuil Signature à ma sélection"><span aria-hidden="true">+</span><span data-fr="Ajouter à ma sélection" data-en="Add to my selection">Ajouter à ma sélection</span></button>
+          </div>
+          <a class="text-link dark-link" href="#catalogue" data-fr="Voir les pièces" data-en="Browse pieces">Voir les pièces <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="catalogue section-pad" id="catalogue" aria-labelledby="catalogue-title">
+        <div class="section-heading catalogue-heading">
+          <div>
+            <p class="eyebrow" data-fr="LUXURY RENTALS · COLLECTION LMH" data-en="LUXURY RENTALS · LMH COLLECTION">LUXURY RENTALS · COLLECTION LMH</p>
+            <h2 id="catalogue-title" data-fr="Les pièces à découvrir." data-en="Pieces to discover.">Les pièces à découvrir.</h2>
+          </div>
+          <p class="section-intro" data-fr="Parcourez les catégories, filtrez les pièces et composez votre sélection. Les quantités sont indicatives et seront confirmées par LMH." data-en="Browse categories, filter the pieces and build your selection. Quantities are indicative and will be confirmed by LMH.">Parcourez les catégories, filtrez les pièces et composez votre sélection. Les quantités sont indicatives et seront confirmées par LMH.</p>
+        </div>
+        <p class="catalogue-demo-note" data-fr="APERÇU DE MAQUETTE · PHOTOS, STOCKS ET INFORMATIONS PRODUIT FICTIFS" data-en="PROTOTYPE PREVIEW · PHOTOS, STOCK AND PRODUCT DETAILS ARE FICTITIOUS">APERÇU DE MAQUETTE · PHOTOS, STOCKS ET INFORMATIONS PRODUIT FICTIFS</p>
+        <div class="catalogue-categories" role="group" aria-label="Catégories du catalogue"></div>
+        <div class="catalogue-filters">
+          <label><span data-fr="Couleur" data-en="Colour">Couleur</span><select id="filter-color"><option value="" data-fr="Toutes" data-en="All">Toutes</option></select></label>
+          <label><span data-fr="Style" data-en="Style">Style</span><select id="filter-style"><option value="" data-fr="Tous" data-en="All">Tous</option></select></label>
+          <label><span data-fr="Matière" data-en="Material">Matière</span><select id="filter-material"><option value="" data-fr="Toutes" data-en="All">Toutes</option></select></label>
+          <button class="filter-reset" type="button" data-fr="Effacer les filtres" data-en="Clear filters">Effacer les filtres</button>
+        </div>
+        <div class="catalogue-results"><span class="catalogue-count" aria-live="polite"></span><button class="catalogue-selection" type="button" data-open-selection><span data-fr="Ma sélection" data-en="My selection">Ma sélection</span><span class="selection-count">0</span></button></div>
+        <div class="catalogue-grid"></div>
+        <p class="catalogue-empty" hidden data-fr="Aucune pièce ne correspond à ces filtres." data-en="No pieces match these filters.">Aucune pièce ne correspond à ces filtres.</p>
+      </section>
+
+      <section class="realisations section-pad" id="realisations">
+        <div class="section-heading">
+          <div><p class="eyebrow" data-fr="QUELQUES HISTOIRES LMH" data-en="A FEW LMH STORIES">QUELQUES HISTOIRES LMH</p><h2 data-fr="Des instants, mis en scène." data-en="Moments, beautifully made.">Des instants, mis en scène.</h2></div>
+          <p class="section-intro" data-fr="Des inspirations pour imaginer votre propre célébration. Ces visuels illustrent la maquette et ne représentent pas encore des réalisations confirmées de LMH." data-en="Inspiration for your own celebration. These images are prototype visuals, not confirmed LMH client work.">Des inspirations pour imaginer votre propre célébration. Ces visuels illustrent la maquette et ne représentent pas encore des réalisations confirmées de LMH.</p>
+        </div>
+        <div class="realisation-grid">
+          <article class="realisation-card realisation-large"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1300&q=85" alt="Table de réception décorée pour une célébration" loading="lazy"><div><span data-fr="CÉLÉBRATION · KRIBI" data-en="CELEBRATION · KRIBI">CÉLÉBRATION · KRIBI</span><h3 data-fr="Une réception aux tons dorés" data-en="A golden-hued reception">Une réception aux tons dorés</h3></div></article>
+          <article class="realisation-card"><img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=900&q=80" alt="Ambiance intimiste aux roses rouges" loading="lazy"><div><span data-fr="ROMANCE · INSPIRATION" data-en="ROMANCE · INSPIRATION">ROMANCE · INSPIRATION</span><h3 data-fr="Un dîner à deux" data-en="Dinner for two">Un dîner à deux</h3></div></article>
+          <article class="realisation-card"><img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=80" alt="Détails de table et décoration florale" loading="lazy"><div><span data-fr="ART DE LA TABLE · INSPIRATION" data-en="TABLE SETTING · INSPIRATION">ART DE LA TABLE · INSPIRATION</span><h3 data-fr="La beauté du détail" data-en="The beauty of detail">La beauté du détail</h3></div></article>
+          <article class="realisation-card"><img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=900&q=80" alt="Espace de réception aménagé" loading="lazy"><div><span data-fr="LOCATION · INSPIRATION" data-en="RENTALS · INSPIRATION">LOCATION · INSPIRATION</span><h3 data-fr="Un espace transformé" data-en="A transformed space">Un espace transformé</h3></div></article>
+          <article class="realisation-card"><img src="https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=900&q=80" alt="Coffret cadeau soigneusement présenté" loading="lazy"><div><span data-fr="CADEAUX · INSPIRATION" data-en="GIFTS · INSPIRATION">CADEAUX · INSPIRATION</span><h3 data-fr="Une attention personnelle" data-en="A personal touch">Une attention personnelle</h3></div></article>
+          <article class="realisation-card"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=80" alt="Silhouette élégante pour une occasion" loading="lazy"><div><span data-fr="FASHION HOUSE · INSPIRATION" data-en="FASHION HOUSE · INSPIRATION">FASHION HOUSE · INSPIRATION</span><h3 data-fr="L’allure d’un grand jour" data-en="A special-day silhouette">L’allure d’un grand jour</h3></div></article>
+        </div>
+      </section>
+
+      <section class="method section-pad" id="methode">
+        <div class="section-heading"><div><p class="eyebrow light-eyebrow" data-fr="SIMPLE, ATTENTIONNÉ, ENSEMBLE" data-en="SIMPLE, THOUGHTFUL, TOGETHER">SIMPLE, ATTENTIONNÉ, ENSEMBLE</p><h2 data-fr="De l’idée au grand jour." data-en="From first idea to the big day.">De l’idée au grand jour.</h2></div><p class="section-intro" data-fr="Nous avançons à vos côtés, avec clarté et le souci du détail." data-en="We guide you every step of the way, with care and clarity.">Nous avançons à vos côtés, avec clarté et le souci du détail.</p></div>
+        <ol class="method-steps">
+          <li><span>01</span><h3 data-fr="Échange" data-en="Conversation">Échange</h3><p data-fr="Vous nous racontez l’occasion, vos envies et votre lieu." data-en="Tell us about the occasion, your ideas and venue.">Vous nous racontez l’occasion, vos envies et votre lieu.</p></li>
+          <li><span>02</span><h3 data-fr="Proposition" data-en="Proposal">Proposition</h3><p data-fr="Nous imaginons une proposition personnalisée et un devis clair." data-en="We prepare a tailored proposal and a clear quote.">Nous imaginons une proposition personnalisée et un devis clair.</p></li>
+          <li><span>03</span><h3 data-fr="Préparation" data-en="Preparation">Préparation</h3><p data-fr="Chaque détail est coordonné avec vous avant le jour J." data-en="We coordinate every detail with you before the day.">Chaque détail est coordonné avec vous avant le jour J.</p></li>
+          <li><span>04</span><h3 data-fr="Jour J" data-en="The day">Jour J</h3><p data-fr="Vous profitez pleinement, LMH veille à l’harmonie." data-en="You enjoy the moment; LMH takes care of the details.">Vous profitez pleinement, LMH veille à l’harmonie.</p></li>
+        </ol>
+      </section>
+
+      <section class="house section-pad" id="maison">
+        <div class="house-image">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=85" alt="Portrait de démonstration, à remplacer par celui de Diane" loading="lazy">
+          <span class="image-note" data-fr="Portrait temporaire · à remplacer" data-en="Temporary portrait · to be replaced">Portrait temporaire · à remplacer</span>
+          <span class="house-seal">LMH<br><i>By Diane</i></span>
+        </div>
+        <div class="house-copy">
+          <p class="eyebrow" data-fr="UN MOT DE DIANE" data-en="A NOTE FROM DIANE">UN MOT DE DIANE</p>
+          <h2 data-fr="Je crois aux moments<br>qui nous rassemblent." data-en="I believe in moments<br>that bring us together.">Je crois aux moments<br>qui nous rassemblent.</h2>
+          <p data-fr="Luxury Moments at Home est née d’une envie : offrir à chacun la beauté d’un moment pensé avec soin. À Kribi et partout où vos belles histoires nous conduisent, mon équipe et moi mettons notre sens du détail au service de vos célébrations." data-en="Luxury Moments at Home began with a simple wish: to make every occasion feel thoughtfully considered. In Kribi and wherever your stories take us, my team and I bring care and attention to your celebrations.">Luxury Moments at Home est née d’une envie : offrir à chacun la beauté d’un moment pensé avec soin. À Kribi et partout où vos belles histoires nous conduisent, mon équipe et moi mettons notre sens du détail au service de vos célébrations.</p>
+          <p class="editorial-note" data-fr="Texte de présentation proposé · à valider avec Diane" data-en="Suggested introduction · to be approved by Diane">Texte de présentation proposé · à valider avec Diane</p>
+          <p class="diane-signature">Diane <span data-fr="Fondatrice, LMH By Diane" data-en="Founder, LMH By Diane">Fondatrice, LMH By Diane</span></p>
+          <blockquote>“<span data-fr="Le Bien Être autrement… Osez la Différence !!!" data-en="Wellness differently… Dare the difference!!!">Le Bien Être autrement… Osez la Différence !!!</span>”</blockquote>
+          <a class="text-link dark-link" href="#contact" data-fr="Rencontrer la maison LMH" data-en="Meet the LMH house">Rencontrer la maison LMH <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="quote-band" aria-label="Témoignages clients">
+        <p class="eyebrow light-eyebrow" data-fr="DES INSTANTS QUI RESTENT" data-en="MOMENTS THAT LAST">DES INSTANTS QUI RESTENT</p>
+        <div class="testimonial" aria-live="polite"><blockquote class="testimonial-quote">« Chaque détail était pensé. Nous avons simplement profité du moment. »</blockquote><p class="quote-credit">CLIENTE LMH · CÉLÉBRATION PRIVÉE</p></div>
+        <div class="testimonial-controls"><button class="world-step testimonial-prev" type="button" aria-label="Témoignage précédent">←</button><span class="testimonial-position">01 / 03</span><button class="world-step testimonial-next" type="button" aria-label="Témoignage suivant">→</button></div>
+        <span class="quote-ornament" aria-hidden="true">✳</span>
+      </section>
+
+      <section class="contact section-pad" id="contact">
+        <div>
+          <p class="eyebrow" data-fr="VOTRE PROCHAIN BEAU SOUVENIR" data-en="YOUR NEXT BEAUTIFUL MEMORY">VOTRE PROCHAIN BEAU SOUVENIR</p>
+          <h2 data-fr="Et si l’on imaginait<br>la suite ensemble ?" data-en="Shall we imagine<br>what comes next?">Et si l’on imaginait<br>la suite ensemble ?</h2>
+        </div>
+        <div class="contact-action">
+          <p data-fr="Parlez-nous de votre occasion, de vos envies ou des pièces que vous avez sélectionnées. Nous vous répondrons avec attention." data-en="Tell us about your occasion, your ideas or the pieces you’ve selected. We’ll be delighted to help.">Parlez-nous de votre occasion, de vos envies ou des pièces que vous avez sélectionnées. Nous vous répondrons avec attention.</p>
+          <button class="button button-burgundy" type="button" data-open-quote data-fr="Parler de mon projet" data-en="Tell us about your plans">Parler de mon projet</button>
+          <span data-fr="Kribi, Cameroun · Sur rendez-vous" data-en="Kribi, Cameroon · By appointment">Kribi, Cameroun · Sur rendez-vous</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#accueil"><span class="brand-mark">LMH</span><span class="brand-name">Luxury Moments <i>at Home</i></span></a>
+      <p data-fr="Bringing Elegance to Your Special Moments" data-en="Bringing Elegance to Your Special Moments">Bringing Elegance to Your Special Moments</p>
+      <span>© 2026 LMH By Diane</span>
+    </footer>
+
+    <button class="floating-contact" type="button" data-open-quote aria-label="Contacter Luxury Moments at Home"><span class="contact-dot"></span><span data-fr="Parlons de votre projet" data-en="Let’s talk about your plans">Parlons de votre projet</span></button>
+
+    <div class="cookie-note" role="dialog" aria-label="Préférences de cookies" hidden>
+      <p data-fr="Nous utilisons des cookies essentiels pour faire fonctionner cette maquette." data-en="We use essential cookies to make this prototype work.">Nous utilisons des cookies essentiels pour faire fonctionner cette maquette.</p>
+      <div><button type="button" data-cookie-choice="refuse" data-fr="Refuser" data-en="Decline">Refuser</button><button type="button" data-cookie-choice="accept" data-fr="Accepter" data-en="Accept">Accepter</button></div>
+    </div>
+
+    <dialog class="selection-dialog" aria-labelledby="selection-title">
+      <button class="dialog-close" type="button" data-close-dialog aria-label="Fermer">×</button>
+      <p class="eyebrow">LUXURY RENTALS</p>
+      <h2 id="selection-title" data-fr="Ma sélection" data-en="My selection">Ma sélection</h2>
+      <p class="selection-empty" data-fr="Ajoutez des pièces du catalogue; leur disponibilité sera confirmée avec LMH." data-en="Add pieces from the catalogue; LMH will confirm their availability.">Ajoutez des pièces du catalogue; leur disponibilité sera confirmée avec LMH.</p>
+      <ul class="selection-items"></ul>
+      <div class="selection-project-fields">
+        <label><span data-fr="Date souhaitée" data-en="Preferred date">Date souhaitée</span><input type="date" name="selection-date"></label>
+        <label><span data-fr="Ville et lieu" data-en="City and venue">Ville et lieu</span><input type="text" name="selection-location" placeholder="Kribi"></label>
+      </div>
+      <div class="selection-actions">
+        <button class="button button-burgundy selection-quote" type="button" data-open-quote data-fr="Demander un devis" data-en="Request a quote">Demander un devis</button>
+        <button class="selection-whatsapp" type="button" data-open-whatsapp data-fr="Simuler l’envoi WhatsApp" data-en="Preview WhatsApp message">Simuler l’envoi WhatsApp</button>
+      </div>
+    </dialog>
+
+    <dialog class="quote-dialog" aria-labelledby="quote-title">
+      <button class="dialog-close" type="button" data-close-dialog aria-label="Fermer">×</button>
+      <p class="eyebrow" data-fr="PARLONS DE VOTRE OCCASION" data-en="TELL US ABOUT YOUR OCCASION">PARLONS DE VOTRE OCCASION</p>
+      <h2 id="quote-title" data-fr="Un premier mot ?" data-en="Let’s begin.">Un premier mot ?</h2>
+      <p class="quote-description" data-fr="Cette maquette recueille vos coordonnées à titre de démonstration uniquement; aucun message ne sera envoyé." data-en="This prototype collects your details for demonstration only; no message will be sent.">Cette maquette recueille vos coordonnées à titre de démonstration uniquement; aucun message ne sera envoyé.</p>
+      <div class="quote-progress" aria-label="Progression du formulaire"><span class="quote-progress-fill"></span></div>
+      <div class="quote-step-label" aria-live="polite"></div>
+      <form class="quote-form" novalidate>
+        <section class="quote-step-panel" data-step="1">
+          <label><span data-fr="Univers concerné" data-en="Area of interest">Univers concerné</span><select name="universe" required><option value="" data-fr="Choisir un univers" data-en="Choose an area">Choisir un univers</option><option value="Célébrations" data-fr="Célébrations" data-en="Celebrations">Célébrations</option><option value="Location" data-fr="Location de matériel" data-en="Equipment rentals">Location de matériel</option><option value="Romance" data-fr="Romance" data-en="Romance">Romance</option><option value="Cadeaux" data-fr="Cadeaux" data-en="Gifts">Cadeaux</option><option value="Fashion House">Fashion House</option><option value="Academy of Elegance">Academy of Elegance</option><option value="Autre" data-fr="Autre" data-en="Other">Autre</option></select></label>
+          <label><span data-fr="Type d’occasion" data-en="Occasion type">Type d’occasion</span><select name="occasion" required><option value="" data-fr="Choisir une occasion" data-en="Choose an occasion">Choisir une occasion</option><option data-fr="Anniversaire" data-en="Birthday">Anniversaire</option><option data-fr="Anniversaire de mariage" data-en="Wedding anniversary">Anniversaire de mariage</option><option data-fr="Réunion de famille" data-en="Family gathering">Réunion de famille</option><option data-fr="Événement d’entreprise" data-en="Corporate event">Événement d’entreprise</option><option data-fr="Surprise romantique" data-en="Romantic surprise">Surprise romantique</option><option data-fr="Autre occasion spéciale" data-en="Other special occasion">Autre occasion spéciale</option></select></label>
+          <div class="quote-field-row"><label><span data-fr="Date souhaitée" data-en="Preferred date">Date souhaitée</span><input name="event-date" type="date"></label><label><span data-fr="Nombre d’invités" data-en="Number of guests">Nombre d’invités</span><select name="guests"><option value="" data-fr="À préciser" data-en="To be confirmed">À préciser</option><option>1–10</option><option>11–30</option><option>31–60</option><option>61–100</option><option>100+</option></select></label></div>
+          <label><span data-fr="Ville et type de lieu" data-en="City and venue">Ville et type de lieu</span><input name="event-location" autocomplete="address-level2" placeholder="Kribi" required></label>
+        </section>
+        <section class="quote-step-panel" data-step="2" hidden>
+          <fieldset class="service-options"><legend data-fr="Quels services vous intéressent ?" data-en="Which services interest you?">Quels services vous intéressent ?</legend>
+            <label><input type="checkbox" name="services" value="Décoration"><span data-fr="Décoration" data-en="Decor">Décoration</span></label><label><input type="checkbox" name="services" value="Mobilier"><span data-fr="Mobilier" data-en="Furniture">Mobilier</span></label><label><input type="checkbox" name="services" value="Art de la table"><span data-fr="Art de la table" data-en="Tableware">Art de la table</span></label><label><input type="checkbox" name="services" value="Éclairage"><span data-fr="Éclairage" data-en="Lighting">Éclairage</span></label><label><input type="checkbox" name="services" value="Organisation complète"><span data-fr="Organisation complète" data-en="Full planning">Organisation complète</span></label><label><input type="checkbox" name="services" value="Coordination jour J"><span data-fr="Coordination jour J" data-en="Event-day coordination">Coordination jour J</span></label>
+          </fieldset>
+          <label><span data-fr="Budget envisagé (FCFA)" data-en="Estimated budget (XAF)">Budget envisagé (FCFA)</span><select name="budget"><option value="" data-fr="À discuter" data-en="To discuss">À discuter</option><option>Moins de 100 000</option><option>100 000 – 300 000</option><option>300 000 – 750 000</option><option>750 000+</option></select></label>
+          <label><span data-fr="Photos d’inspiration (facultatif, 5 fichiers max.)" data-en="Inspiration photos (optional, up to 5 files)">Photos d’inspiration (facultatif, 5 fichiers max.)</span><input name="inspiration" type="file" accept="image/*" multiple></label>
+          <div class="quote-selection-summary" hidden></div>
+        </section>
+        <section class="quote-step-panel" data-step="3" hidden>
+          <label><span data-fr="Votre nom" data-en="Your name">Votre nom</span><input name="name" autocomplete="name" required></label>
+          <div class="quote-field-row"><label><span data-fr="Téléphone (+237 par défaut)" data-en="Phone (+237 by default)">Téléphone (+237 par défaut)</span><input name="phone" type="tel" autocomplete="tel" placeholder="+237"></label><label><span data-fr="Votre adresse e-mail" data-en="Your email address">Votre adresse e-mail</span><input name="email" type="email" autocomplete="email" required></label></div>
+          <label class="checkbox-line"><input name="diaspora" type="checkbox"><span data-fr="Je réside à l’étranger" data-en="I live abroad">Je réside à l’étranger</span></label>
+          <label class="country-field" hidden><span data-fr="Pays de résidence" data-en="Country of residence">Pays de résidence</span><input name="country" autocomplete="country-name"></label>
+          <div class="quote-field-row"><label><span data-fr="Moyen de contact préféré" data-en="Preferred contact method">Moyen de contact préféré</span><select name="contact-method"><option data-fr="WhatsApp" data-en="WhatsApp">WhatsApp</option><option data-fr="Téléphone" data-en="Phone">Téléphone</option><option>E-mail</option></select></label><label><span data-fr="Comment avez-vous connu LMH ?" data-en="How did you hear about LMH?">Comment avez-vous connu LMH ?</span><select name="source"><option>Instagram</option><option>Google</option><option>Facebook</option><option>TikTok</option><option data-fr="Bouche-à-oreille" data-en="Word of mouth">Bouche-à-oreille</option><option data-fr="Autre" data-en="Other">Autre</option></select></label></div>
+          <label><span data-fr="Un détail à partager ?" data-en="Anything else to share?">Un détail à partager ?</span><textarea name="message" rows="3"></textarea></label>
+          <label class="checkbox-line consent-line"><input name="consent" type="checkbox" required><span data-fr="J’accepte que LMH utilise ces informations pour répondre à ma demande." data-en="I agree that LMH may use this information to respond to my enquiry.">J’accepte que LMH utilise ces informations pour répondre à ma demande.</span></label>
+        </section>
+        <div class="quote-form-actions"><button class="quote-back" type="button" hidden data-fr="Retour" data-en="Back">Retour</button><button class="button button-burgundy quote-next" type="button" data-fr="Continuer" data-en="Continue">Continuer</button><button class="button button-burgundy quote-submit" type="submit" hidden data-fr="Envoyer ma demande" data-en="Send my enquiry">Envoyer ma demande</button></div>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+    </dialog>
+
+    <dialog class="whatsapp-dialog" aria-labelledby="whatsapp-title">
+      <button class="dialog-close" type="button" data-close-dialog aria-label="Fermer">×</button>
+      <p class="eyebrow">WHATSAPP · LMH</p>
+      <h2 id="whatsapp-title" data-fr="Votre message est prêt." data-en="Your message is ready.">Votre message est prêt.</h2>
+      <p class="quote-description" data-fr="Simulation uniquement : le numéro WhatsApp Business de LMH reste à renseigner. Aucun message ne sera envoyé." data-en="Preview only: LMH’s WhatsApp Business number still needs to be added. No message will be sent.">Simulation uniquement : le numéro WhatsApp Business de LMH reste à renseigner. Aucun message ne sera envoyé.</p>
+      <textarea class="whatsapp-preview" rows="7" readonly></textarea>
+      <button class="button button-burgundy whatsapp-copy" type="button" data-fr="Copier le message" data-en="Copy message">Copier le message</button>
+      <p class="whatsapp-status" aria-live="polite"></p>
+    </dialog>
+
+    <dialog class="world-dialog" aria-labelledby="world-dialog-title">
+      <button class="dialog-close" type="button" data-close-dialog aria-label="Fermer">×</button>
+      <div class="world-dialog-heading">
+        <div><p class="eyebrow" data-world-eyebrow></p><h2 id="world-dialog-title"></h2></div>
+        <p class="world-dialog-description"></p>
+      </div>
+      <div class="preview-grid"></div>
+      <div class="world-dialog-footer">
+        <button class="world-step world-previous" type="button" aria-label="Univers précédent">←</button>
+        <span class="world-position"></span>
+        <button class="world-step world-next" type="button" aria-label="Univers suivant">→</button>
+        <a class="text-link dark-link world-rental-link" href="#catalogue" hidden></a>
+        <button class="button button-burgundy world-quote-link" type="button" data-open-world-quote></button>
+      </div>
+    </dialog>
+
+    <script>
+const languageButton = document.querySelector(".language-toggle");
+const menuButton = document.querySelector(".menu-toggle");
+const mainNav = document.querySelector(".main-nav");
+const selectionDialog = document.querySelector(".selection-dialog");
+const quoteDialog = document.querySelector(".quote-dialog");
+const worldDialog = document.querySelector(".world-dialog");
+const whatsappDialog = document.querySelector(".whatsapp-dialog");
+const selectionItems = document.querySelector(".selection-items");
+const selectionEmpty = document.querySelector(".selection-empty");
+const selectionCounts = document.querySelectorAll(".selection-count");
+const cookieNote = document.querySelector(".cookie-note");
+const storedSelection = JSON.parse(localStorage.getItem("lmh-selection") || "[]");
+const savedItems = new Map(storedSelection.map((item) => typeof item === "string" ? [item, { id: item, title: item, category: "", quantity: 1 }] : [item.id, item]));
+const categories = [
+  { id: "backdrops-arches", name: ["Arches & fonds", "Backdrops & arches"] },
+  { id: "seating", name: ["Fauteuils & salons", "Royal chairs & lounge seating"] },
+  { id: "tables-linens", name: ["Tables & linge", "Tables & linens"] },
+  { id: "centerpieces", name: ["Centres de table & vases", "Centerpieces & vases"] },
+  { id: "lighting", name: ["Bougeoirs & lumières", "Candleholders & ambient lighting"] },
+  { id: "tableware", name: ["Arts de la table", "Tableware & chargers"] },
+  { id: "dessert-displays", name: ["Présentoirs desserts", "Cake stands & dessert displays"] },
+  { id: "additional-decor", name: ["Décor complémentaire", "Additional décor"] }
+];
+const filterNames = {
+  color: { burgundy: ["Bordeaux", "Burgundy"], ivory: ["Ivoire", "Ivory"], gold: ["Or", "Gold"], clear: ["Transparent", "Clear"], white: ["Blanc", "White"], green: ["Vert", "Green"] },
+  style: { classic: ["Classique", "Classic"], romantic: ["Romantique", "Romantic"], contemporary: ["Contemporain", "Contemporary"], royal: ["Royal", "Regal"] },
+  material: { velvet: ["Velours", "Velvet"], metal: ["Métal", "Metal"], wood: ["Bois", "Wood"], linen: ["Lin", "Linen"], glass: ["Verre", "Glass"], ceramic: ["Céramique", "Ceramic"], crystal: ["Cristal", "Crystal"] }
+};
+const pieces = [
+  { id: "arch-gold", category: "backdrops-arches", name: ["Arche Signature dorée", "Signature gold arch"], photo: "photo-1519741497674-611481863552", color: "gold", style: "royal", material: "metal", dimensions: ["H 2,4 m × L 1,8 m", "H 2.4 m × W 1.8 m"], quantity: 2 },
+  { id: "backdrop-ivory", category: "backdrops-arches", name: ["Fond drapé ivoire", "Ivory draped backdrop"], photo: "photo-1519167758481-83f550bb49b3", color: "ivory", style: "romantic", material: "linen", dimensions: ["H 2,5 m × L 3 m", "H 2.5 m × W 3 m"], quantity: 3 },
+  { id: "chair-burgundy", category: "seating", name: ["Fauteuil Signature", "Signature armchair"], photo: "photo-1507504031003-b417219a0fde", color: "burgundy", style: "royal", material: "velvet", dimensions: ["H 98 × L 78 × P 72 cm", "H 98 × W 78 × D 72 cm"], quantity: 4 },
+  { id: "lounge-ivory", category: "seating", name: ["Salon lounge ivoire", "Ivory lounge set"], photo: "photo-1600210492486-724fe5c67fb0", color: "ivory", style: "contemporary", material: "wood", dimensions: ["Canapé 180 cm · 2 fauteuils", "180 cm sofa · 2 armchairs"], quantity: 1 },
+  { id: "table-round", category: "tables-linens", name: ["Table ronde de réception", "Round reception table"], photo: "photo-1519167758481-83f550bb49b3", color: "white", style: "classic", material: "wood", dimensions: ["Ø 180 cm · 8 à 10 convives", "Ø 180 cm · seats 8–10"], quantity: 6 },
+  { id: "runner-burgundy", category: "tables-linens", name: ["Chemin de table bordeaux", "Burgundy table runner"], photo: "photo-1464366400600-7168b8af9bc3", color: "burgundy", style: "romantic", material: "linen", dimensions: ["L 280 × l 45 cm", "L 280 × W 45 cm"], quantity: 12 },
+  { id: "vase-crystal", category: "centerpieces", name: ["Vase cristal élancé", "Tall crystal vase"], photo: "photo-1497250681960-ef046c08a56e", color: "clear", style: "classic", material: "crystal", dimensions: ["H 32 cm · pièce seule", "H 32 cm · vase only"], quantity: 10 },
+  { id: "centerpiece-gold", category: "centerpieces", name: ["Centre de table doré", "Gold centerpiece stand"], photo: "photo-1519225421980-715cb0215aed", color: "gold", style: "royal", material: "metal", dimensions: ["H 65 cm · base Ø 18 cm", "H 65 cm · base Ø 18 cm"], quantity: 8 },
+  { id: "candlestick-brass", category: "lighting", name: ["Bougeoirs dorés", "Gold candlesticks"], photo: "photo-1511795409834-ef04bbd61622", color: "gold", style: "classic", material: "metal", dimensions: ["3 hauteurs · 24, 30 et 36 cm", "3 heights · 24, 30 and 36 cm"], quantity: 12 },
+  { id: "lantern-ivory", category: "lighting", name: ["Lanterne lumière douce", "Soft-glow lantern"], photo: "photo-1518895949257-7621c3c786d7", color: "ivory", style: "romantic", material: "metal", dimensions: ["H 38 cm · bougie non incluse", "H 38 cm · candle not included"], quantity: 6 },
+  { id: "charger-gold", category: "tableware", name: ["Chargeur de table doré", "Gold charger plate"], photo: "photo-1519974719765-e6559eac2575", color: "gold", style: "royal", material: "metal", dimensions: ["Ø 33 cm · pièce décorative", "Ø 33 cm · decorative piece"], quantity: 30 },
+  { id: "plate-ivory", category: "tableware", name: ["Assiette ivoire bord fin", "Ivory fine-rim plate"], photo: "photo-1414235077428-338989a2e8c0", color: "ivory", style: "classic", material: "ceramic", dimensions: ["Ø 27 cm · set de présentation", "Ø 27 cm · presentation set"], quantity: 40 },
+  { id: "cake-crystal", category: "dessert-displays", name: ["Présentoir à gâteau cristal", "Crystal cake stand"], photo: "photo-1535141192574-5d4897c12636", color: "clear", style: "classic", material: "crystal", dimensions: ["H 28 cm · gâteau non inclus", "H 28 cm · cake not included"], quantity: 2 },
+  { id: "dessert-gold", category: "dessert-displays", name: ["Étagère à douceurs dorée", "Gold dessert display"], photo: "photo-1488477181946-6428a0291777", color: "gold", style: "royal", material: "metal", dimensions: ["3 niveaux · H 52 cm", "3 tiers · H 52 cm"], quantity: 3 },
+  { id: "mirror-welcome", category: "additional-decor", name: ["Miroir de bienvenue", "Welcome mirror"], photo: "photo-1519225421980-715cb0215aed", color: "gold", style: "romantic", material: "glass", dimensions: ["H 160 × L 55 cm", "H 160 × W 55 cm"], quantity: 1 },
+  { id: "vase-green", category: "additional-decor", name: ["Vase décoratif botanique", "Botanical decorative vase"], photo: "photo-1497250681960-ef046c08a56e", color: "green", style: "contemporary", material: "ceramic", dimensions: ["H 28 cm · décoration seule", "H 28 cm · decorative piece"], quantity: 5 }
+];
+const initialUrlFilters = new URLSearchParams(window.location.search);
+let activeCategory = initialUrlFilters.get("categorie") || "all";
+if (activeCategory !== "all" && !categories.some((category) => category.id === activeCategory)) activeCategory = "all";
+let catalogFilters = { color: initialUrlFilters.get("couleur") || "", style: initialUrlFilters.get("style") || "", material: initialUrlFilters.get("matiere") || "" };
+const worlds = [
+  { id: "celebrations", name: ["Célébrations", "Celebrations"], description: ["Des décors pensés autour de votre histoire, pour les anniversaires, les retrouvailles et les grandes dates.", "Thoughtful settings shaped around your story, for birthdays, family gatherings and life's milestones."], items: [["Tables de fête", "Festive tables", "photo-1464366400600-7168b8af9bc3"], ["Fleurs & décoration", "Flowers & styling", "photo-1519225421980-715cb0215aed"], ["Instants à célébrer", "Moments to celebrate", "photo-1511795409834-ef04bbd61622"]] },
+  { id: "rentals", name: ["Location", "Rentals"], description: ["Mobilier, assises et détails décoratifs à sélectionner pour composer un lieu qui vous ressemble.", "Furniture, seating and decorative details to shape a setting that feels like you."], items: [["Assises Signature", "Signature seating", "photo-1507504031003-b417219a0fde"], ["Art de la table", "Tableware", "photo-1519974719765-e6559eac2575"], ["Décors de réception", "Event styling", "photo-1519167758481-83f550bb49b3"]] },
+  { id: "romance", name: ["Romance", "Romance"], description: ["Des attentions délicates et des décors intimistes pour célébrer votre histoire à deux.", "Thoughtful gestures and intimate settings to celebrate your story together."], items: [["Dîner aux chandelles", "Candlelit dinner", "photo-1518895949257-7621c3c786d7"], ["Échappée romantique", "Romantic escape", "photo-1516589178581-6cd7833ae3b2"], ["Une attention fleurie", "A floral gesture", "photo-1494972308805-463bc619d34e"]] },
+  { id: "gifts", name: ["Cadeaux", "Gifts"], description: ["Coffrets et attentions personnalisées, imaginés pour faire plaisir et marquer le moment.", "Personalised gift boxes and thoughtful details made to delight and mark the moment."], items: [["Coffrets attentionnés", "Thoughtful gift boxes", "photo-1513201099705-a9746e1e201f"], ["Petites attentions", "Little gestures", "photo-1607083206968-13611e3d76db"], ["Un message personnel", "A personal note", "photo-1512909006721-3d6018887383"]] },
+  { id: "fashion", name: ["Fashion House", "Fashion House"], description: ["Un univers dédié à l’allure, aux silhouettes de cérémonie et à l’élégance personnelle.", "A world devoted to personal style, occasionwear and effortless elegance."], items: [["Silhouettes de cérémonie", "Occasionwear", "photo-1539109136881-3be0616acf4b"], ["Détails de style", "Style details", "photo-1529139574466-a303027c1d8b"], ["L’élégance au quotidien", "Everyday elegance", "photo-1483985988355-763728e1935b"]] },
+  { id: "academy", name: ["Academy of Elegance", "Academy of Elegance"], description: ["Des ateliers et apprentissages autour du savoir-recevoir, de la confiance et du savoir-vivre.", "Workshops and learning in hospitality, confidence and the art of living well."], items: [["L’art de recevoir", "The art of hosting", "photo-1511988617509-a57c8a288659"], ["Atelier de savoir-vivre", "Etiquette workshop", "photo-1528605248644-14dd04022da1"], ["Apprendre ensemble", "Learning together", "photo-1529390079861-591de354faf5"]] }
+];
+let activeWorldIndex = 0;
+let language = new URLSearchParams(window.location.search).get("lang") === "en" ? "en" : "fr";
+let quoteStep = 1;
+const testimonials = [
+  { quote: ["« Chaque détail était pensé. Nous avons simplement profité du moment. »", "“Every detail was considered. We simply got to enjoy the moment.”"], credit: ["EXEMPLE DE MAQUETTE · AVIS CLIENT À VALIDER", "PROTOTYPE EXAMPLE · CLIENT REVIEW TO BE APPROVED"] },
+  { quote: ["« L’ambiance imaginée par LMH a rendu notre journée encore plus spéciale. »", "“The atmosphere LMH created made our day even more special.”"], credit: ["EXEMPLE DE MAQUETTE · AVIS CLIENT À VALIDER", "PROTOTYPE EXAMPLE · CLIENT REVIEW TO BE APPROVED"] },
+  { quote: ["« Une équipe à l’écoute, du premier échange jusqu’au dernier détail. »", "“A thoughtful team, from our first conversation to the final detail.”"], credit: ["EXEMPLE DE MAQUETTE · AVIS CLIENT À VALIDER", "PROTOTYPE EXAMPLE · CLIENT REVIEW TO BE APPROVED"] }
+];
+let testimonialIndex = 0;
+
+function localized(values) {
+  return values[language === "fr" ? 0 : 1];
+}
+
+function renderWorld(index) {
+  activeWorldIndex = (index + worlds.length) % worlds.length;
+  const world = worlds[activeWorldIndex];
+  document.querySelector("[data-world-eyebrow]").textContent = `LMH · ${String(activeWorldIndex + 1).padStart(2, "0")}`;
+  document.querySelector("#world-dialog-title").textContent = localized(world.name);
+  document.querySelector(".world-dialog-description").textContent = localized(world.description);
+  document.querySelector(".world-position").textContent = `${String(activeWorldIndex + 1).padStart(2, "0")} / ${String(worlds.length).padStart(2, "0")}`;
+  document.querySelector(".world-previous").setAttribute("aria-label", language === "fr" ? "Univers précédent" : "Previous world");
+  document.querySelector(".world-next").setAttribute("aria-label", language === "fr" ? "Univers suivant" : "Next world");
+  document.querySelector(".world-quote-link").textContent = language === "fr" ? "Parler de cet univers" : "Ask about this world";
+  const rentalsLink = document.querySelector(".world-rental-link");
+  rentalsLink.hidden = world.id !== "rentals";
+  rentalsLink.innerHTML = language === "fr" ? "Voir les pièces <span aria-hidden=\"true\">↗</span>" : "Browse pieces <span aria-hidden=\"true\">↗</span>";
+  document.querySelector(".preview-grid").replaceChildren(...world.items.map(([titleFr, titleEn, photo]) => {
+    const card = document.createElement("article");
+    card.className = "preview-card";
+    const image = document.createElement("img");
+    image.src = `https://images.unsplash.com/${photo}?auto=format&fit=crop&w=700&q=80`;
+    image.alt = localized([titleFr, titleEn]);
+    image.loading = "lazy";
+    const title = document.createElement("h3");
+    title.textContent = localized([titleFr, titleEn]);
+    const caption = document.createElement("p");
+    caption.textContent = language === "fr" ? "Collection LMH · aperçu" : "LMH collection · preview";
+    card.append(image, title, caption);
+    return card;
+  }));
+}
+
+function persistSelection() {
+  localStorage.setItem("lmh-selection", JSON.stringify([...savedItems.values()]));
+}
+
+function selectionTitle(item) {
+  const piece = pieces.find((entry) => entry.id === item.id);
+  return piece ? localized(piece.name) : item.title;
+}
+
+function selectionCategory(item) {
+  const piece = pieces.find((entry) => entry.id === item.id);
+  const category = piece && categories.find((entry) => entry.id === piece.category);
+  return category ? localized(category.name) : item.category || (language === "fr" ? "Pièce à découvrir" : "Featured piece");
+}
+
+function changeQuantity(id, amount) {
+  const item = savedItems.get(id);
+  if (!item) return;
+  item.quantity += amount;
+  if (item.quantity <= 0) savedItems.delete(id);
+  persistSelection();
+  updateSelection();
+  renderCatalog();
+}
+
+function addSelectionItem(item) {
+  const existing = savedItems.get(item.id);
+  if (existing) existing.quantity += 1;
+  else savedItems.set(item.id, { ...item, quantity: 1 });
+  persistSelection();
+  updateSelection();
+  renderCatalog();
+}
+
+function renderSelection() {
+  const totalQuantity = [...savedItems.values()].reduce((total, item) => total + item.quantity, 0);
+  selectionCounts.forEach((count) => {
+    count.textContent = String(totalQuantity);
+    count.setAttribute("aria-label", language === "fr" ? `${totalQuantity} pièce${totalQuantity === 1 ? "" : "s"} sélectionnée${totalQuantity === 1 ? "" : "s"}` : `${totalQuantity} selected item${totalQuantity === 1 ? "" : "s"}`);
+  });
+  selectionItems.replaceChildren(...[...savedItems.values()].map((item) => {
+    const row = document.createElement("li");
+    const details = document.createElement("span");
+    const category = document.createElement("span");
+    category.className = "selection-item-category";
+    category.textContent = selectionCategory(item);
+    const title = document.createElement("span");
+    title.textContent = selectionTitle(item);
+    details.append(category, title);
+    const quantity = document.createElement("span");
+    quantity.className = "quantity-control";
+    const decrease = document.createElement("button");
+    decrease.type = "button";
+    decrease.dataset.selectionAction = "decrease";
+    decrease.dataset.selectionId = item.id;
+    decrease.setAttribute("aria-label", language === "fr" ? `Retirer une unité de ${item.title}` : `Remove one ${item.title}`);
+    decrease.textContent = "−";
+    const value = document.createElement("span");
+    value.textContent = String(item.quantity);
+    const increase = document.createElement("button");
+    increase.type = "button";
+    increase.dataset.selectionAction = "increase";
+    increase.dataset.selectionId = item.id;
+    increase.setAttribute("aria-label", language === "fr" ? `Ajouter une unité de ${item.title}` : `Add one ${item.title}`);
+    increase.textContent = "+";
+    quantity.append(decrease, value, increase);
+    const remove = document.createElement("button");
+    remove.type = "button";
+    remove.className = "selection-remove";
+    remove.dataset.selectionAction = "remove";
+    remove.dataset.selectionId = item.id;
+    remove.textContent = language === "fr" ? "Retirer de ma sélection" : "Remove from selection";
+    row.append(details, quantity, remove);
+    return row;
+  }));
+  const isEmpty = savedItems.size === 0;
+  selectionEmpty.hidden = !isEmpty;
+  selectionItems.hidden = isEmpty;
+  document.querySelector(".selection-project-fields").hidden = isEmpty;
+  document.querySelector(".selection-quote").hidden = isEmpty;
+}
+
+function updateSelection() {
+  renderSelection();
+}
+
+function renderCategoryControls() {
+  const categoryGroup = document.querySelector(".catalogue-categories");
+  const allButton = document.createElement("button");
+  allButton.type = "button";
+  allButton.className = "catalogue-category";
+  allButton.dataset.category = "all";
+  allButton.setAttribute("aria-pressed", String(activeCategory === "all"));
+  allButton.textContent = language === "fr" ? "Toutes les catégories" : "All categories";
+  const buttons = [allButton, ...categories.map((category) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "catalogue-category";
+    button.dataset.category = category.id;
+    button.setAttribute("aria-pressed", String(activeCategory === category.id));
+    button.textContent = localized(category.name);
+    return button;
+  })];
+  categoryGroup.replaceChildren(...buttons);
+}
+
+function renderFilterOptions() {
+  for (const filterName of ["color", "style", "material"]) {
+    const select = document.querySelector(`#filter-${filterName}`);
+    const values = [...new Set(pieces.map((piece) => piece[filterName]))];
+    const defaultOption = select.options[0];
+    defaultOption.textContent = filterName === "style" ? (language === "fr" ? "Tous" : "All") : (language === "fr" ? "Toutes" : "All");
+    select.replaceChildren(defaultOption, ...values.map((value) => {
+      const option = document.createElement("option");
+      option.value = value;
+      option.textContent = localized(filterNames[filterName][value]);
+      return option;
+    }));
+    select.value = catalogFilters[filterName];
+  }
+}
+
+function renderCatalog() {
+  renderCategoryControls();
+  renderFilterOptions();
+  const categoryMap = new Map(categories.map((category) => [category.id, localized(category.name)]));
+  const filteredPieces = pieces.filter((piece) => (activeCategory === "all" || piece.category === activeCategory)
+    && (!catalogFilters.color || piece.color === catalogFilters.color)
+    && (!catalogFilters.style || piece.style === catalogFilters.style)
+    && (!catalogFilters.material || piece.material === catalogFilters.material));
+  document.querySelector(".catalogue-count").textContent = language === "fr" ? `${filteredPieces.length} pièce${filteredPieces.length === 1 ? "" : "s"} présentée${filteredPieces.length === 1 ? "" : "s"}` : `${filteredPieces.length} piece${filteredPieces.length === 1 ? "" : "s"} shown`;
+  document.querySelector(".catalogue-empty").hidden = filteredPieces.length > 0;
+  document.querySelector(".catalogue-grid").replaceChildren(...filteredPieces.map((piece) => {
+    const card = document.createElement("article");
+    card.className = "catalogue-card";
+    const photoWrap = document.createElement("div");
+    photoWrap.className = "catalogue-photo";
+    const image = document.createElement("img");
+    image.src = `https://images.unsplash.com/${piece.photo}?auto=format&fit=crop&w=800&q=80`;
+    image.alt = localized(piece.name);
+    image.loading = "lazy";
+    const availability = document.createElement("span");
+    availability.className = "catalogue-photo-label";
+    availability.textContent = language === "fr" ? `${piece.quantity} disponible(s) · indicatif` : `${piece.quantity} available · indicative`;
+    photoWrap.append(image, availability);
+    const categoryName = document.createElement("span");
+    categoryName.className = "catalogue-card-category";
+    categoryName.textContent = categoryMap.get(piece.category);
+    const title = document.createElement("h3");
+    title.textContent = localized(piece.name);
+    const specs = document.createElement("p");
+    specs.className = "catalogue-specs";
+    specs.textContent = `${localized(filterNames.color[piece.color])} · ${localized(filterNames.style[piece.style])} · ${localized(filterNames.material[piece.material])} · ${localized(piece.dimensions)}`;
+    const priceRow = document.createElement("div");
+    priceRow.className = "catalogue-price-row";
+    const price = document.createElement("span");
+    price.className = "catalogue-price";
+    price.textContent = language === "fr" ? "Sur devis" : "On request";
+    const add = document.createElement("button");
+    add.type = "button";
+    add.className = "catalogue-add";
+    add.dataset.catalogueAdd = piece.id;
+    const alreadySelected = savedItems.get(piece.id)?.quantity || 0;
+    add.setAttribute("aria-label", language === "fr" ? `Ajouter ${localized(piece.name)} à ma sélection` : `Add ${localized(piece.name)} to my selection`);
+    const plus = document.createElement("span");
+    plus.textContent = alreadySelected ? String(alreadySelected) : "+";
+    const actionText = document.createElement("span");
+    actionText.textContent = alreadySelected ? (language === "fr" ? "Ajouter une pièce" : "Add one") : (language === "fr" ? "Ajouter" : "Add");
+    add.append(plus, actionText);
+    priceRow.append(price, add);
+    card.append(photoWrap, categoryName, title, specs, priceRow);
+    return card;
+  }));
+}
+
+function syncCatalogUrl() {
+  const url = new URL(window.location.href);
+  const params = [["categorie", activeCategory], ["couleur", catalogFilters.color], ["style", catalogFilters.style], ["matiere", catalogFilters.material]];
+  params.forEach(([key, value]) => value && value !== "all" ? url.searchParams.set(key, value) : url.searchParams.delete(key));
+  url.hash = "catalogue";
+  window.history.replaceState(null, "", url);
+}
+
+function setActiveCategory(categoryId, updateUrl = true) {
+  activeCategory = categoryId;
+  if (updateUrl) syncCatalogUrl();
+  renderCatalog();
+}
+
+function setLanguage(nextLanguage) {
+  language = nextLanguage;
+  document.documentElement.lang = language;
+  document.querySelectorAll("[data-fr][data-en]").forEach((element) => {
+    element.innerHTML = element.dataset[language];
+  });
+  languageButton.textContent = language === "fr" ? "EN" : "FR";
+  languageButton.setAttribute("aria-label", language === "fr" ? "Switch to English" : "Passer en français");
+  const languageUrl = new URL(window.location.href);
+  if (language === "en") languageUrl.searchParams.set("lang", "en");
+  else languageUrl.searchParams.delete("lang");
+  window.history.replaceState(null, "", languageUrl);
+  document.querySelectorAll("[data-add-item]").forEach((button) => {
+    const item = button.dataset[language === "fr" ? "addItem" : "enItem"];
+    button.setAttribute("aria-label", language === "fr" ? `Ajouter ${item} à ma sélection` : `Add ${item} to my selection`);
+  });
+  if (worldDialog.open) renderWorld(activeWorldIndex);
+  renderTestimonial();
+  renderQuoteStep();
+  renderCatalog();
+  updateSelection();
+}
+
+languageButton.addEventListener("click", () => setLanguage(language === "fr" ? "en" : "fr"));
+
+menuButton.addEventListener("click", () => {
+  const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+  menuButton.setAttribute("aria-expanded", String(!isOpen));
+  menuButton.setAttribute("aria-label", isOpen ? "Ouvrir le menu" : "Fermer le menu");
+  mainNav.classList.toggle("is-open", !isOpen);
+});
+
+mainNav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => {
+  menuButton.setAttribute("aria-expanded", "false");
+  mainNav.classList.remove("is-open");
+}));
+
+document.querySelectorAll("[data-open-selection]").forEach((button) => button.addEventListener("click", () => selectionDialog.showModal()));
+document.querySelectorAll("[data-open-quote]").forEach((button) => button.addEventListener("click", () => {
+  if (selectionDialog.contains(button)) {
+    const selectedDescription = [...savedItems.values()].map((item) => `${selectionTitle(item)} × ${item.quantity}`).join("\n");
+    const date = document.querySelector("[name='selection-date']").value;
+    const location = document.querySelector("[name='selection-location']").value;
+    document.querySelector("[name='universe']").value = "Location";
+    document.querySelector("[name='event-date']").value = date;
+    document.querySelector("[name='event-location']").value = location;
+    document.querySelector("[name='message']").value = [selectedDescription, date && `${language === "fr" ? "Date souhaitée" : "Preferred date"}: ${date}`, location && `${language === "fr" ? "Ville et lieu" : "City and venue"}: ${location}`].filter(Boolean).join("\n");
+  }
+  selectionDialog.close();
+  quoteStep = 1;
+  renderQuoteStep();
+  quoteDialog.showModal();
+}));
+document.querySelectorAll("[data-close-dialog]").forEach((button) => button.addEventListener("click", () => button.closest("dialog").close()));
+
+document.querySelector(".catalogue-categories").addEventListener("click", (event) => {
+  const button = event.target.closest("[data-category]");
+  if (button) setActiveCategory(button.dataset.category);
+});
+for (const filterName of ["color", "style", "material"]) {
+  document.querySelector(`#filter-${filterName}`).addEventListener("change", (event) => {
+    catalogFilters[filterName] = event.target.value;
+    syncCatalogUrl();
+    renderCatalog();
+  });
+}
+document.querySelector(".filter-reset").addEventListener("click", () => {
+  catalogFilters = { color: "", style: "", material: "" };
+  setActiveCategory("all");
+});
+document.querySelector(".catalogue-grid").addEventListener("click", (event) => {
+  const button = event.target.closest("[data-catalogue-add]");
+  if (!button) return;
+  const piece = pieces.find((item) => item.id === button.dataset.catalogueAdd);
+  if (!piece) return;
+  addSelectionItem({ id: piece.id, title: localized(piece.name), category: localized(categories.find((category) => category.id === piece.category).name) });
+});
+selectionItems.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-selection-action]");
+  if (!button) return;
+  if (button.dataset.selectionAction === "remove") {
+    savedItems.delete(button.dataset.selectionId);
+    persistSelection();
+    updateSelection();
+    renderCatalog();
+    return;
+  }
+  changeQuantity(button.dataset.selectionId, button.dataset.selectionAction === "increase" ? 1 : -1);
+});
+
+document.querySelectorAll("[data-world]").forEach((button) => button.addEventListener("click", () => {
+  renderWorld(worlds.findIndex((world) => world.id === button.dataset.world));
+  worldDialog.showModal();
+}));
+document.querySelector(".world-previous").addEventListener("click", () => renderWorld(activeWorldIndex - 1));
+document.querySelector(".world-next").addEventListener("click", () => renderWorld(activeWorldIndex + 1));
+document.querySelector(".world-rental-link").addEventListener("click", () => worldDialog.close());
+document.querySelector("[data-open-world-quote]").addEventListener("click", () => {
+  const world = worlds[activeWorldIndex];
+  const universeSelect = document.querySelector("[name='universe']");
+  universeSelect.value = world.name[0];
+  worldDialog.close();
+  quoteStep = 1;
+  renderQuoteStep();
+  quoteDialog.showModal();
+});
+
+document.querySelectorAll("[data-occasion]").forEach((button) => button.addEventListener("click", () => {
+  const occasionSelect = document.querySelector("[name='occasion']");
+  occasionSelect.value = button.dataset.occasion;
+  const universeSelect = document.querySelector("[name='universe']");
+  universeSelect.value = button.dataset.occasion.toLowerCase().includes("surprise") ? "Romance" : "Célébrations";
+  quoteStep = 1;
+  renderQuoteStep();
+  quoteDialog.showModal();
+}));
+
+function renderTestimonial() {
+  const testimonial = testimonials[testimonialIndex];
+  document.querySelector(".testimonial-quote").textContent = localized(testimonial.quote);
+  document.querySelector(".quote-credit").textContent = localized(testimonial.credit);
+  document.querySelector(".testimonial-position").textContent = `${String(testimonialIndex + 1).padStart(2, "0")} / ${String(testimonials.length).padStart(2, "0")}`;
+  document.querySelector(".testimonial-prev").setAttribute("aria-label", language === "fr" ? "Témoignage précédent" : "Previous testimonial");
+  document.querySelector(".testimonial-next").setAttribute("aria-label", language === "fr" ? "Témoignage suivant" : "Next testimonial");
+}
+
+document.querySelector(".testimonial-prev").addEventListener("click", () => {
+  testimonialIndex = (testimonialIndex + testimonials.length - 1) % testimonials.length;
+  renderTestimonial();
+});
+document.querySelector(".testimonial-next").addEventListener("click", () => {
+  testimonialIndex = (testimonialIndex + 1) % testimonials.length;
+  renderTestimonial();
+});
+
+function renderQuoteStep() {
+  document.querySelectorAll(".quote-step-panel").forEach((panel) => { panel.hidden = Number(panel.dataset.step) !== quoteStep; });
+  document.querySelector(".quote-progress-fill").style.width = `${quoteStep / 3 * 100}%`;
+  document.querySelector(".quote-step-label").textContent = language === "fr" ? `Étape ${quoteStep} sur 3 · ${["Votre demande", "Vos besoins", "Vos coordonnées"][quoteStep - 1]}` : `Step ${quoteStep} of 3 · ${["Your request", "Your needs", "Your details"][quoteStep - 1]}`;
+  document.querySelector(".quote-back").hidden = quoteStep === 1;
+  document.querySelector(".quote-next").hidden = quoteStep === 3;
+  document.querySelector(".quote-submit").hidden = quoteStep !== 3;
+  const summary = document.querySelector(".quote-selection-summary");
+  summary.hidden = savedItems.size === 0;
+  const selectionLines = [...savedItems.values()].map((item) => `${selectionTitle(item)} × ${item.quantity}`);
+  const selectedDate = document.querySelector("[name='selection-date']").value;
+  const selectedLocation = document.querySelector("[name='selection-location']").value;
+  if (selectedDate) selectionLines.push(`Date: ${selectedDate}`);
+  if (selectedLocation) selectionLines.push(`${language === "fr" ? "Lieu" : "Venue"}: ${selectedLocation}`);
+  summary.textContent = savedItems.size ? `${language === "fr" ? "Ma sélection :" : "My selection:"}\n${selectionLines.join("\n")}` : "";
+  document.querySelector(".form-status").textContent = "";
+}
+
+function validateQuoteStep() {
+  const activePanel = document.querySelector(`.quote-step-panel[data-step="${quoteStep}"]`);
+  const requiredInputs = [...activePanel.querySelectorAll("[required]")];
+  const invalidInput = requiredInputs.find((input) => !input.checkValidity());
+  const fileInput = activePanel.querySelector("[name='inspiration']");
+  const invalidFiles = fileInput && (fileInput.files.length > 5 || [...fileInput.files].some((file) => file.size > 5 * 1024 * 1024));
+  if (invalidInput) {
+    invalidInput.reportValidity();
+    return false;
+  }
+  if (invalidFiles) {
+    fileInput.setCustomValidity(language === "fr" ? "Choisissez au maximum 5 images de 5 Mo chacune." : "Choose up to 5 images, each no larger than 5 MB.");
+    fileInput.reportValidity();
+    fileInput.addEventListener("change", () => fileInput.setCustomValidity(""), { once: true });
+    return false;
+  }
+  return true;
+}
+
+document.querySelector(".quote-next").addEventListener("click", () => {
+  if (!validateQuoteStep()) return;
+  quoteStep = Math.min(3, quoteStep + 1);
+  renderQuoteStep();
+});
+document.querySelector(".quote-back").addEventListener("click", () => {
+  quoteStep = Math.max(1, quoteStep - 1);
+  renderQuoteStep();
+});
+document.querySelector("[name='diaspora']").addEventListener("change", (event) => {
+  const countryField = document.querySelector(".country-field");
+  countryField.hidden = !event.target.checked;
+  countryField.querySelector("input").required = event.target.checked;
+});
+document.querySelector(".quote-form").addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (!validateQuoteStep()) return;
+  const reference = `LMH-DEMO-${String(Date.now()).slice(-6)}`;
+  document.querySelector(".form-status").textContent = language === "fr" ? `Votre demande de démonstration ${reference} est prête. Aucune donnée n’a été envoyée.` : `Your demo request ${reference} is ready. No data has been sent.`;
+});
+
+function buildWhatsAppPreview() {
+  const chosenItems = [...savedItems.values()].map((item) => `• ${selectionTitle(item)} × ${item.quantity}`);
+  const date = document.querySelector("[name='selection-date']").value;
+  const location = document.querySelector("[name='selection-location']").value;
+  const lines = language === "fr"
+    ? ["Bonjour LMH, je souhaite recevoir un devis pour :", ...chosenItems, date && `Date souhaitée : ${date}`, location && `Ville / lieu : ${location}`, "Pouvez-vous me confirmer les disponibilités ?"]
+    : ["Hello LMH, I’d like a quote for:", ...chosenItems, date && `Preferred date: ${date}`, location && `City / venue: ${location}`, "Could you confirm availability?"];
+  document.querySelector(".whatsapp-preview").value = lines.filter(Boolean).join("\n");
+}
+
+document.querySelectorAll("[data-open-whatsapp]").forEach((button) => button.addEventListener("click", () => {
+  buildWhatsAppPreview();
+  selectionDialog.close();
+  whatsappDialog.showModal();
+}));
+document.querySelector(".whatsapp-copy").addEventListener("click", async () => {
+  const preview = document.querySelector(".whatsapp-preview");
+  try {
+    await navigator.clipboard.writeText(preview.value);
+    document.querySelector(".whatsapp-status").textContent = language === "fr" ? "Message copié. L’envoi reste désactivé dans cette maquette." : "Message copied. Sending is disabled in this prototype.";
+  } catch {
+    preview.select();
+    document.execCommand("copy");
+    document.querySelector(".whatsapp-status").textContent = language === "fr" ? "Message sélectionné pour copie. Aucun envoi n’a été effectué." : "Message selected for copying. Nothing was sent.";
+  }
+});
+
+document.querySelectorAll("[data-add-item]").forEach((button) => button.addEventListener("click", () => {
+  const item = button.dataset[language === "fr" ? "addItem" : "enItem"];
+  addSelectionItem({ id: `featured-${item}`, title: item, category: language === "fr" ? "Pièce à découvrir" : "Featured piece" });
+  button.querySelector("span:last-child").textContent = language === "fr" ? "Ajouté à ma sélection" : "Added to my selection";
+  window.setTimeout(() => {
+    button.querySelector("span:last-child").textContent = language === "fr" ? "Ajouter à ma sélection" : "Add to my selection";
+  }, 1800);
+}));
+
+document.querySelectorAll("[data-cookie-choice]").forEach((button) => button.addEventListener("click", () => {
+  localStorage.setItem("lmh-cookie-choice", button.dataset.cookieChoice);
+  cookieNote.hidden = true;
+}));
+
+if (!localStorage.getItem("lmh-cookie-choice")) {
+  window.setTimeout(() => { cookieNote.hidden = false; }, 900);
+}
+
+if (language === "en") setLanguage("en");
+renderTestimonial();
+renderQuoteStep();
+renderCatalog();
+updateSelection();
+    </script>
+  </body>
+</html>
